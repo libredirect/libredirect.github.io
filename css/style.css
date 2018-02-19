@@ -22,7 +22,6 @@ h1, h2 {
 
 #text {
     text-align: center;
-    min-width: 30em;
 }
 
 #logo {
@@ -34,13 +33,13 @@ h1, h2 {
 
 #text h1 {
     display: inline;
-    padding-left: 1em;
+    padding-left: .8em;
     font-size: 360%;
     font-weight: 400;
 }
 
 #text h2 {
-    font-size: 200%;
+    font-size: 180%;
     font-weight: 300;
 }
 
