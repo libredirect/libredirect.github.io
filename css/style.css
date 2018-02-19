@@ -33,7 +33,7 @@ h1, h2 {
 
 #text h1 {
     display: inline;
-    padding-left: .8em;
+    padding-left: .5em;
     font-size: 360%;
     font-weight: 400;
 }
@@ -41,10 +41,20 @@ h1, h2 {
 #text h2 {
     font-size: 180%;
     font-weight: 300;
+    line-height: 150%;
 }
 
-#text div {
-    text-align: center;
+#description {
+    text-shadow: 0 0 .6em rgba(0,0,0,.6);
+    line-height: 150%;
+    max-width: 50em;
+    padding: 0 2em;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#description a {
+    color: #fff;
 }
 
 #primary-buttons {
@@ -55,13 +65,13 @@ h1, h2 {
     margin: 2em 0;
 }
 
-#text a {
+#primary-buttons a {
     color: #fff;
     padding: .5em 1em; 
     border-radius: 2em;
     background: #1e76b7;
     font-size: 1.3em;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     text-decoration: none;
     box-shadow: 0 0 1em 0 rgba(0,0,0,.6);
     margin: .8em;
