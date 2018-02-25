@@ -87,8 +87,9 @@ body {
     color: #2b90d9;
 }
 
-#screenshot img {
-    margin: 2em 0;
+#screenshot {
+    padding: 2em 0;
+    text-align: center;
 }
 
 footer {
