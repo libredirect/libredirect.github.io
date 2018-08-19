@@ -9,6 +9,7 @@ html {
 
 body {
     background-image: url(../img/background_tile.jpg);
+    background-color: #0b161a;
     font-family: sans-serif;
     color: #fff;
     text-shadow: 0 0 .6em rgba(0, 0, 0, .6);
