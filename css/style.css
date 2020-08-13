@@ -64,15 +64,6 @@ body {
     background: #fff;
 }
 
-#primary-buttons a .mdi-light:before {
-    color: #fff;
-    transition: color .4s ease-in-out;
-}
-
-#primary-buttons a:hover .mdi-light:before {
-    color: #2b90d9;
-}
-
 #description {
     margin: 2em 1em;
     line-height: 150%;
