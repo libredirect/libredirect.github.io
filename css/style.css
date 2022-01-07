@@ -8,9 +8,14 @@ html {
 }
 
 body {
-    background-image: url(../img/background_tile.jpg);
     background-color: #0b161a;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body#home {
+    background-image: url(../img/background_tile.jpg);
     color: #fff;
     text-shadow: 0 0 .6em rgba(0, 0, 0, .6);
     display: flex;
@@ -18,8 +23,12 @@ body {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0;
-    padding: 0;
+}
+
+body#privacy-policy {
+    padding: 1em 2em;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #text {
@@ -117,4 +126,21 @@ footer a:hover span {
         flex-direction: column;
         align-items: center;
     }
+}
+
+#privacy-policy main {
+    max-width: 42em;
+    margin: 0 auto;
+}
+
+#privacy-policy h2 {
+    margin-top: 1.5em;
+}
+
+#privacy-policy a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#privacy-policy a:hover {
+    color: #fff;
 }
