@@ -1,4 +1,4 @@
-# tuskyapp.github.io
+# libredirect.github.io
 
 - no Javascript
 - no external dependencies
