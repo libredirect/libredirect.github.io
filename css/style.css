@@ -15,7 +15,6 @@ body {
 }
 
 body#home {
-    background-image: url(../img/background_tile.jpg);
     color: #fff;
     text-shadow: 0 0 .6em rgba(0, 0, 0, .6);
     display: flex;
