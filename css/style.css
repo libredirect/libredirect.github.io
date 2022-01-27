@@ -7,9 +7,16 @@ html {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background-color: #0b161a;
-    font-family: sans-serif;
+    background-color: #121212;
+    font-family: OpenSans;
     margin: 0;
     padding: 0;
 }
@@ -37,7 +44,7 @@ body#privacy-policy {
 #logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     margin-top: 2em;
 }
 
@@ -73,7 +80,7 @@ body#privacy-policy {
 }
 
 #description {
-    margin: 2em 1em;
+    margin: 2em 0;
     line-height: 150%;
     max-width: 52em;
     text-align: left;

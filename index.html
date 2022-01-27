@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title> LibRedirect - privacy-friendly Redirector </title>
+    <title>LibRedirect</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fontello.css" />
-    <link rel="icon" type="image/x-icon" href="img/libredirect.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="icon" type="image/x-icon" href="img/icon.svg" />
     <link rel="canonical" href="https://libredirect.github.io" />
 
     <meta name="theme-color" content="#1e76b7">
@@ -19,46 +19,112 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="LibRedirect - privacy-friendly Redirector" />
     <meta property="og:site_name" content="libredirect.github.io" />
-<!--     <meta property="og:description" content="Tusky is a lightweight Android client for Mastodon, a free and open-source social network server." /> -->
+    <meta property="og:description"
+        content="A web extension that redirects Twitter, YouTube, Instagram, Google Maps, Reddit, Medium, Google & Google Translate requests to privacy-friendly alternative frontends for those sites." />
     <meta property="og:url" content="https://libredirect.github.io/" />
-    <meta property="og:image" content="https://libredirect.github.io/img/banner.png" />
+    <!-- <meta property="og:image" content="https://libredirect.github.io/img/banner.png" />
     <meta property="og:image:width" content="1024" />
-    <meta property="og:image:height" content="500" />
+    <meta property="og:image:height" content="500" /> -->
     <script> </script>
 </head>
 
 <body id="home">
     <div id="text">
         <div id="logo">
-            <img src="img/libredirect.svg" width="160" height="160" alt="LibRedirect icon" />
-            <h1> LibRedirect </h1>
+            <img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon" />
+            <h1>LibRedirect</h1>
         </div>
 
-        <h2> Simple extension that redirects you to privacy-friendly alternatives </h2>
-
-        <div id="primary-buttons">
-        </div>
+        <h2>A simple extension that redirects to alternative privacy-friendly frontends</h2>
 
         <div id="description">
             <p>
-                A web extension that redirects Twitter, YouTube, Instagram, Google Maps, Reddit, Medium, Google & Google Translate requests to privacy-friendly alternative frontends for those sites. LibRedirect is free and open source software licensed under the
+                It redirects
+                <span style="color:#f90002">YouTube</span>,
+                <span style="color:#1dabdd">Twitter</span>,
+                <span style="color:#d600a4">Instagram</span>,
+                <span style="color:#f84300">Reddit</span>,
+                <span style="color:#1a6fe1">Google</span>,
+                <span style="color:#1a6fe1">Google Translate</span>,
+                <span style="color:#1a6fe1">Google Maps</span>,
+                Wikipedia & Medium requests to a more privacy-friendly alternative frontends.
+            </p>
+
+            <p>
+                <span style="color:#f90002">YouTube</span> =>
+                <a href="https://github.com/iv-org/invidious">Invidious</a>
+            </p>
+
+            <p>
+                <span style="color:#1dabdd">Twitter</span> =>
+                <a href="https://github.com/zedeus/nitter">Nitter</a>
+            </p>
+
+            <p>
+                <span style="color:#d600a4">Instagram</span> =>
+                <a href="https://sr.ht/~cadence/bibliogram/">Bibliogram</a>
+            </p>
+
+            <p>
+                <span style="color:#f84300">Reddit</span> =>
+                <a href="https://github.com/spikecodes/libreddit#instances">libreddit</a>,
+                <a href="https://codeberg.org/teddit/teddit#instances">Teddit</a>,
+                <a href="https://github.com/snew/snew">Snew</a>
+            </p>
+
+            <p>
+                <span style="color:#1a6fe1">Google</span> =>
+                <a href="https://searx.github.io/searx/">SearX</a>,
+                <a href="https://duckduckgo.com/">DuckDuckGo</a>,
+                <a href="https://startpage.com/">Startpage</a>,
+                <a href="https://www.ecosia.org/">Ecosia</a>,
+                <a href="https://www.qwant.com/">Qwant</a>,
+                <a href="https://www.mojeek.com/">Mojeek</a>,
+                <a href="https://www.presearch.org/">Presearch</a>,
+                <a href="https://benbusby.com/projects/whoogle-search/">Whoogle</a>
+            </p>
+
+            <p>
+                <span style="color:#1a6fe1">Google Translate</span> =>
+                <a href="https://git.sr.ht/~metalune/simplytranslate_web">SimplyTranslate</a>
+            </p>
+
+            <p>
+                <span style="color:#1a6fe1">Google Maps</span> =>
+                <a href="https://www.openstreetmap.org/">OpenStreetMap</a>
+            </p>
+
+            <p>
+                Wikipedia =>
+                <a href="https://codeberg.org/orenom/wikiless">Wikiless</a>
+            </p>
+
+            <p>
+                Medium =>
+                <a href="https://sr.ht/~edwardloveall/scribe/">Scribe</a>
+            </p>
+
+            <p>
+                LibRedirect is free and open source software licensed under the
                 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0</a>.
             </p>
+
             <p>
-                If you have any questions, feature, requests, or you found a bug in LibRedirect, feel free to open
-                <a href="https://github.com/libredirect/libredirect/issues">an issue on GitHub</a> or send a message to
+                If you have any questions, feature, requests, or you found a bug, feel free to open
+                <a href="https://github.com/libredirect/libredirect/issues">an issue on GitHub</a>.
             </p>
         </div>
     </div>
-
     <div id="screenshot">
-        <img src="img/screenshot.png" srcset="img/screenshot.png 1x, img/screenshot_2x.png 2x" width="297" height="550" alt="Screenshot of LibRedirect" />
+        <img src="img/screenshot.png" srcset="img/screenshot.png 1x, img/screenshot_2x.png 2x" height="550"
+            alt="Screenshot of LibRedirect" />
     </div>
+
 
     <footer>
         <a href="https://github.com/libredirect/libredirect/releases/">
             <i class="icon-download"></i>
-            <span>Download latest version</span>
+            <span>Download</span>
         </a>
         <a href="https://github.com/libredirect/libredirect/releases">
             <i class="icon-changelog"></i>
@@ -66,8 +132,7 @@
         </a>
         <a href="https://github.com/libredirect/libredirect">
             <i class="icon-github"></i>
-            <span>GitHub</span>
-
+            <span>SourceCode</span>
     </footer>
 
 </body>
