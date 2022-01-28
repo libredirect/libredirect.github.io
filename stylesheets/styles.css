@@ -399,7 +399,7 @@ input[type="url"]:focus {
   outline: none;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   body {
     --text: #000;
     --text-secondary: #fff;
@@ -417,7 +417,7 @@ input[type="url"]:focus {
   .popup {
     background-color: var(--bg-secondary);
   }
-}
+} */
 
 #volume-value {
   float: right;
@@ -493,9 +493,6 @@ hr {
   box-shadow: 0 0 1px var(--bg-secondary);
   font-weight: bold;
 }
-
-
-
 
 /* .light-theme.popup,
 .light-theme .popup {
