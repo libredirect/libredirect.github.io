@@ -10,7 +10,6 @@
     <meta name="robots" content="index, follow" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fontello.css" />
     <link rel="icon" type="image/x-icon" href="img/icon.svg" />
     <link rel="canonical" href="https://libredirect.github.io" />
 
@@ -25,30 +24,16 @@
     <!-- <meta property="og:image" content="https://libredirect.github.io/img/banner.png" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="500" /> -->
-    <script> </script>
 </head>
 
-<body id="home">
-    <div id="text">
-        <div id="logo">
-            <img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon" />
-            <h1>LibRedirect</h1>
-        </div>
-
-        <h2>A simple extension that redirects to alternative privacy-friendly frontends</h2>
-
+<body>
+    <div id="logo">
+        <img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon" />
+        <h1>LibRedirect</h1>
+    </div>
+    <div id="body">
         <div id="description">
-            <p>
-                It redirects
-                <span style="color:#f90002">YouTube</span>,
-                <span style="color:#1dabdd">Twitter</span>,
-                <span style="color:#d600a4">Instagram</span>,
-                <span style="color:#f84300">Reddit</span>,
-                <span style="color:#1a6fe1">Google</span>,
-                <span style="color:#1a6fe1">Google Translate</span>,
-                <span style="color:#1a6fe1">Google Maps</span>,
-                Wikipedia & Medium requests to a more privacy-friendly alternative frontends.
-            </p>
+            <h2>An extension that redirects popular sites to alternative privacy-friendly frontends and backends</h2>
 
             <p>
                 <span style="color:#f90002">YouTube</span> =>
@@ -103,36 +88,34 @@
                 Medium =>
                 <a href="https://sr.ht/~edwardloveall/scribe/">Scribe</a>
             </p>
-
+            <a href="https://addons.mozilla.org/firefox/addon/libredirect/">
+                <img
+                    src="https://raw.githubusercontent.com/libredirect/LibRedirect/master/src/assets/images/badge-amo.png" />
+            </a>
             <p>
-                LibRedirect is free and open source software licensed under the
+                It's a free and open source software licensed under the
                 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0</a>.
-            </p>
-
-            <p>
-                If you have any questions, feature, requests, or you found a bug, feel free to open
+                If you have any questions, feature requests, or found a bug, feel free to open
                 <a href="https://github.com/libredirect/libredirect/issues">an issue on GitHub</a>.
             </p>
+
+        </div>
+        <div id="screenshot">
+            <iframe type="text/html" src="./popup.html">
+            </iframe>
         </div>
     </div>
-    <div id="screenshot">
-        <img src="img/screenshot.png" srcset="img/screenshot.png 1x, img/screenshot_2x.png 2x" height="550"
-            alt="Screenshot of LibRedirect" />
-    </div>
-
-
+    <br>
     <footer>
-        <a href="https://github.com/libredirect/libredirect/releases/">
-            <i class="icon-download"></i>
-            <span>Download</span>
-        </a>
         <a href="https://github.com/libredirect/libredirect/releases">
-            <i class="icon-changelog"></i>
-            <span>Changelog</span>
+            Changelog
         </a>
         <a href="https://github.com/libredirect/libredirect">
-            <i class="icon-github"></i>
-            <span>SourceCode</span>
+            SourceCode
+        </a>
+        <a href="">
+            Donate
+        </a>
     </footer>
 
 </body>
