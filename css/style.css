@@ -35,7 +35,7 @@ embed {
     transform-origin: 0 0;
 }
 
-#popup{
+#popup {
     width: 250px;
     height: 612.5px;
 }
@@ -105,5 +105,18 @@ a:hover {
         margin-right: 0;
     }
 
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    body {
+        background-color: #e3e7ea;
+        color: black;
+    }
+
+    a {
+        color: black;
+    }
 
 }
