@@ -7,7 +7,7 @@
 
 body {
     background-color: #121212;
-    font-family: OpenSans;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -60,14 +60,20 @@ embed {
     line-height: 150%;
     width: 70%;
 }
+p {
+    font-size: 18px;
+}
 
 a {
     color: #fff;
-    transition: .1s;
+    color: #fbc117;
+    /* transition: .1s; */
+    text-decoration: none;
 }
 
 a:hover {
-    color: #fbc117;
+    /* color: #fbc117; */
+    text-decoration: underline;
 }
 
 .footer {
@@ -81,9 +87,6 @@ a:hover {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 @media only screen and (max-width: 1080px) {
 
