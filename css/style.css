@@ -60,6 +60,7 @@ embed {
     line-height: 150%;
     width: 70%;
 }
+
 p {
     font-size: 18px;
 }
@@ -114,12 +115,12 @@ a:hover {
 @media (prefers-color-scheme: light) {
 
     body {
-        background-color: #e3e7ea;
+        background-color: white;
         color: black;
     }
 
     a {
-        color: black;
+        color: #fb9817;
     }
 
 }
