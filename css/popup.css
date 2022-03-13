@@ -11,8 +11,8 @@ body {
 }
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt,wght.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +20,7 @@ body {
 body {
     margin: auto;
     padding: 0;
-    font-family: 'OpenSans';
+    font-family: 'Inter';
     background-color: var(--bg-main);
     color: var(--text);
     overflow-x: hidden
@@ -32,9 +32,11 @@ div.some-block input[type="checkbox"] {
     -webkit-appearance: none;
 }
 
-div.title {
+.title {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: var(--text);
 }
 
 img, svg {
@@ -47,24 +49,17 @@ img, svg {
 input[type="url"],
 input[type="text"],
 select {
-    padding: 5px 10px;
-    width: 350px;
     font-weight: bold;
-    border-radius: 3px;
     box-sizing: border-box;
-    background-color: var(--bg-main);
     border-style: solid;
     border-color: #767676;
     color: var(--text);
-}
-
-select {
     font-size: 16px;
     padding: 8px;
     background-color: var(--bg-secondary);
     border: none;
     margin: 0;
-    width: auto;
+    width: 200px;
     border-radius: 3px;
 }
 
@@ -93,6 +88,10 @@ section.links div {
     margin: 20px 0;
 }
 
+a {
+    color: var(--active);
+}
+
 section.links a {
     display: flex;
     align-items: center;
@@ -108,7 +107,32 @@ section.links a.selected {
 }
 
 input[type="range"] {
+    -webkit-appearance: none;
     width: 350px;
+    height: 7px;
+    border-radius: 50px;
+    background: var(--text);
+}
+
+input[type="range"]:hover {
+    background: var(--light-grey);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active);
+    border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active);
+    border: none;
 }
 
 ::placeholder {
@@ -303,6 +327,21 @@ button.add {
     display: inline-block;
     cursor: pointer;
 }
+
+div.disabled {
+    background-color: rgb(39, 39, 39);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.light-theme.popup,
+.light-theme .popup {
+    background-color: var(--bg-secondary);
+}
+
 
 
 @media (prefers-color-scheme: light) {

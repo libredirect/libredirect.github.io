@@ -291,7 +291,7 @@ li {
 }
 
 .autocomplete input {
-  background: url(../../assets/images/chevron-down.svg) right no-repeat;
+  background: url(./img/chevron-down.svg) right no-repeat;
 }
 
 .autocomplete-items {
