@@ -1,5 +1,6 @@
-# libredirect.github.io
+# Libredirect Official Site
 
-- no Javascript
-- no external dependencies
-- less than 1mb per load
+- No Javascript, Only HTML & CSS
+- No External Dependencies
+- Less than 1MB per load
+- Fully hosted on Github pages
