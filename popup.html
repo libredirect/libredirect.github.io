@@ -51,14 +51,6 @@
     <input id="disable-tiktok" type="checkbox" checked />
   </div>
 
-  <div id="imgur" class="some-block">
-    <a  target="_blank"class="title" href="https://imgur.com">
-      <img src="./img/imgur-icon.png" />
-      <h4>Imgur</h4>
-    </a>
-    <input id="disable-imgur" type="checkbox" checked />
-  </div>
-
   <div id="reddit" class="some-block">
     <a  target="_blank"class="title" href="https://reddit.com">
       <!-- https://www.flaticon.com/authors/md-tanvirul-haque -->
@@ -68,29 +60,12 @@
     <input id="disable-reddit" type="checkbox" checked />
   </div>
 
-  <div id="pixiv" class="some-block">
-    <a  target="_blank"class="title" href="https://pixiv.net">
-      <!-- https://clipground.com/pics/getsecond?url=pixiv-logo-2.png -->
-      <img src="./img/pixiv-icon.svg" />
-      <h4>Pixiv</h4>
+  <div id="imgur" class="some-block">
+    <a  target="_blank"class="title" href="https://imgur.com">
+      <img src="./img/imgur-icon.png" />
+      <h4>Imgur</h4>
     </a>
-    <input id="disable-pixiv" type="checkbox" checked />
-  </div>
-
-  <!--<div id="spotify" class="some-block">
-    <a  target="_blank"class="title" href="https://spotify.com">
-      <img src=".././img/spotify-icon.png" />
-      <h4>Spotify</h4>
-    </a>
-    <input id="disable-spotify" type="checkbox" checked />
-  </div>-->
-
-  <div id="wikipedia" class="some-block">
-    <a  target="_blank"class="title" href="https://wikipedia.org">
-      <img src="./img/wikipedia-icon.svg" />
-      <h4>Wikipedia</h4>
-    </a>
-    <input id="disable-wikipedia" type="checkbox" checked />
+    <input id="disable-imgur" type="checkbox" checked />
   </div>
 
   <div id="medium" class="some-block">
@@ -106,21 +81,6 @@
     <input id="disable-medium" type="checkbox" checked />
   </div>
 
-  <div id="peertube" class="some-block">
-    <a  target="_blank"class="title" href="https://search.joinpeertube.org">
-      <img src="./img/peertube-icon.svg" />
-      <h4>Peertube</h4>
-    </a>
-    <input id="disable-peertube" type="checkbox" checked />
-  </div>
-
-  <div id="lbry" class="some-block">
-    <a  target="_blank"class="title" href="https://odysee.com">
-      <img src="./img/lbry-icon.png" />
-      <h4>LBRY</h4>
-    </a>
-    <input id="disable-lbry" type="checkbox" checked />
-  </div>
   <div id="search" class="some-block">
     <a  target="_blank"class="title" href="http://libredirect.invalid">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -156,17 +116,6 @@
     <input id="disable-osm" type="checkbox" checked />
   </div>
 
-  <div id="sendTargets" class="some-block">
-    <a  target="_blank"class="title" href="http://send.invalid">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
-        <path
-          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z" />
-      </svg>
-      <h4>Send Files</h4>
-    </a>
-    <input id="disable-sendTargets" type="checkbox" checked />
-  </div>
-
   <div class="buttons-popup">
     <a class="button" id="change-instance">
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
@@ -182,6 +131,14 @@
           d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z" />
       </svg>
       Settings
+    </a>
+    <a class="button" id="Copy Raw">
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+        width="24px" fill="currentColor">
+        <path
+          d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+      </svg>
+      Copy Raw
     </a>
   </div>
 
