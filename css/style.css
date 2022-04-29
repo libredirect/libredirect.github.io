@@ -8,11 +8,14 @@ body {
 
 #logo {
     margin: 0 auto;
-    width: 80%;
     display: flex;
     align-items: center;
     justify-content: start;
     margin-top: 2em;
+}
+
+#logo img {
+    width: 120px;
 }
 
 #logo h1 {
@@ -22,26 +25,21 @@ body {
 
 embed {
     width: 280px;
-    height: 750px;
+    height: 572px;
     border: none;
     transform: scale(1.1);
     transform-origin: 0 0;
 }
 
 #popup {
-    margin-top: 24px;
     width: 308px;
-    height: 825px;
+    height: 629px;
 }
 
 #body {
-    width: 80%;
+    width: 1080px;
     margin: 0 auto;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 #body h2 {
@@ -52,7 +50,10 @@ embed {
 
 #description {
     line-height: 150%;
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 p {
@@ -82,7 +83,7 @@ a:hover {
     text-decoration: none;
 }
 
-img.badge{
+img.badge {
     height: 60px;
     width: auto;
 }
@@ -97,14 +98,14 @@ img.badge{
         width: 100px;
         height: auto;
     }
-
     #body {
-        justify-content: center;
+        width: 80%;
     }
 
     #description {
         width: 100%;
         margin-right: 0;
+        justify-content: center;
     }
 
 
