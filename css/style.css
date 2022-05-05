@@ -10,8 +10,7 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin-top: 2em;
+    justify-content: center;
 }
 
 #logo img {
@@ -23,9 +22,30 @@ body {
     font-size: 360%;
 }
 
+div.nav_bar {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.nav_bar a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+div.nav_bar a {
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
 embed {
     width: 280px;
-    height: 572px;
+    height: 535px;
     border: none;
     transform: scale(1.1);
     transform-origin: 0 0;
@@ -33,7 +53,7 @@ embed {
 
 #popup {
     width: 308px;
-    height: 629px;
+    height: 589px;
 }
 
 #body {
@@ -56,14 +76,23 @@ embed {
     align-items: center;
 }
 
-p {
+p, li {
     font-size: 18px;
     margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     color: #fff;
     color: #ffd65b;
+}
+
+a.badge {
     text-decoration: none;
 }
 
@@ -72,18 +101,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.footer {
-    text-align: center;
-    padding: 0 .5em .5em .5em;
-}
-
-.footer a {
-    margin: .8em 2em;
-    display: inline-block;
-    text-decoration: none;
-}
-
-img.badge {
+a.badge img {
     height: 60px;
     width: auto;
 }
@@ -98,6 +116,7 @@ img.badge {
         width: 100px;
         height: auto;
     }
+
     #body {
         width: 80%;
     }

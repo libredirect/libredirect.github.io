@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        include widgets/head.pug
+
+        title LibRedirect
+    body 
+        #body 
+
+            #logo 
+                img(src="img/icon.svg" width="160" height="160" alt="LibRedirect icon")
+                h1 LibRedirect
+
+
+            include widgets/nav_bar.pug
+
+            h2 Download
+            
+            br
+            
+            a.badge(href="https://addons.mozilla.org/firefox/addon/libredirect/")
+                img(src="./img/badge-amo.png")
+            |&nbsp;&nbsp;&nbsp;
+            a.badge(href="https://microsoftedge.microsoft.com/addons/detail/libredirect/aodffkeankebfonljgbcfbbaljopcpdb")
+                img(src="./img/badge-ms.png")
+            |&nbsp;&nbsp;&nbsp;
+            a.badge(href="https://github.com/libredirect/libredirect/blob/master/chromium.md")
+                img(src="./img/badge-chromium.png")
