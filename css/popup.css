@@ -342,38 +342,6 @@ div.disabled {
     background-color: var(--bg-secondary);
 }
 
-
-
-@media (prefers-color-scheme: light) {
-    .popup {
-        background-color: var(--bg-secondary);
-    }
-
-    body {
-        --text: black;
-        --bg-main: white;
-        --bg-secondary: #fff;
-        --active: #fb9817;
-    }
-
-    body select {
-        border: 1px solid black;
-    }
-
-    body textarea {
-        color: black;
-        border: 1px solid #767676;
-    }
-
-    body textarea:focus {
-        outline: none;
-    }
-
-    body a {
-        color: black;
-    }
-}
-
 body {
     width: 280px;
     min-height: auto;

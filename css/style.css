@@ -39,8 +39,17 @@ div.nav_bar a {
     padding: 10px;
 }
 
+y {
+    color: #ffd65b;
+}
+
 h2 {
     margin-bottom: 0;
+}
+
+h2 a {
+    color: white;
+    text-decoration: none;
 }
 
 embed {
@@ -126,19 +135,4 @@ a.badge img {
         margin-right: 0;
         justify-content: center;
     }
-
-
-}
-
-@media (prefers-color-scheme: light) {
-
-    body {
-        background-color: white;
-        color: black;
-    }
-
-    a {
-        color: #fb9817;
-    }
-
 }
