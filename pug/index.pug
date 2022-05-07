@@ -16,6 +16,9 @@ html(lang="en")
 
             h2 A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends
 
+
+
+
             #description
                 div 
                     ul 
@@ -103,3 +106,26 @@ html(lang="en")
 
                 #popup
                     embed(type="text/html" src="./popup.html")
+
+            h2 Why?
+
+            p Normally you watch YouTube videos through <a href="https://youtube.com">youtube.com</a>. Problem is everything you watch is tied to your identity (Google Account). Even if you didn't specify your real name, you're IP address is visible. Even if you use a VPN or the <a href="https://en.wikipedia.org/wiki/Tor_(network)">Tor Browser</a>, you still have <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, a programming language that can get so much information about your browser and your system. It's like running a <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">python</a> program every time you visit a website. Just visit <a href="https://www.amiunique.org">amiunique.org</a> and see how much information is available to know about you, you're Platform, Timezone, Screen width, Screen height, Media devices, etc... All those may seem uncommon at first, but merging them together popups you out from the herd.<br>
+                |So why not disabling JavaScript? Great idea! Now YouTube is broken as it requires JavaScript to function ¯\_(ツ)_/¯
+
+            p There's a way though to make a script that scraps data off of <a href="https://youtube.com">youtube.com</a> and presents it in a nice simple webpage that doesn't require JavaScript. People did this already! There's a project called <a href="https://github.com/iv-org/invidious">Invidious</a> that doesn't require JavaScript for you to watch videos, ex: <a href=https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ>https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ</a>
+            p Those are called alternative <y>Frontends</y> where you really are still using YouTube but with a different Interface, in our case a privacy friendly one.
+
+            p The code is open source and you can run it on your home server or your personal computer. People did this already and there's a ton of <a href="https://api.invidious.io/">Instances</a> that are basically servers running Invidious in different parts of the world. Using an instance with multiple people helps to mix your data together as it exists from only one end. It's like using the same account on Netflix. Using multiple instances (a random one each time) will also mix your data more as it's now stored in multiple servers rather than in a single centralized one.
+
+            p Using a random instance and changing links each time from ex:<br><a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a> => <a href="https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ">https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ</a><br> is a difficult process and best to be automated. Well, we already did that!<br>
+                |LibRedirect's main functionality is to make the use of those instances much easier for users and even unifies settings and cookies between them so you'll get a consistent interface while using multiple instnaces at the same time.
+
+            p Same thing with Twitter, Instagram, Google Translate, Reddit, Imgur, TikTok and much more!
+
+            p LibRedirect is a hub that connects normal users to privacy friendly frontends. It makes life much easier and privacy more convenient.
+
+            h2 How to use it?
+            p <a href="./download.html">Download</a> and install it.<br>Then type or click on any youtube link you want, ex: <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a><br>
+                |It will automatically redirect you to a random Invidious instance. You can fine tune your redirections in the settings page.
+
+            <br><br><br>

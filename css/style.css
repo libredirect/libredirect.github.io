@@ -60,10 +60,7 @@ embed {
     transform-origin: 0 0;
 }
 
-#popup {
-    width: 308px;
-    height: 589px;
-}
+
 
 #body {
     width: 1080px;
@@ -83,6 +80,15 @@ embed {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+#description div{
+    width: 700px;
+}
+
+#description #popup {
+    width: 308px;
+    height: 589px;
 }
 
 p, li {
