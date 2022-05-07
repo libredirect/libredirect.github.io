@@ -13,12 +13,19 @@ html(lang="en")
 
             include widgets/nav_bar.pug
 
-            h2 Donate. Thank You!
+            h2 Donate, Thank You!
 
-            p LiberaPay: <a href="https://liberapay.com/libredirect">https://liberapay.com/libredirect</a>
+            br
 
-            p Patreon: <a href="https://patreon.com/libredirect">https://patreon.com/libredirect</a>
-
-            p Buy me a coffee: <a href="https://www.buymeacoffee.com/libredirect">https://buymeacoffee.com/libredirect</a>
+            a.badge_medium(href="https://liberapay.com/libredirect")
+                img(src="./img/liberapay.svg")
+            |&nbsp;&nbsp;
+            
+            a.badge_medium(href="https://patreon.com/libredirect")
+                img(src="./img/patreon.svg")
+            |&nbsp;&nbsp;
+            
+            a.badge_medium(href="https://www.buymeacoffee.com/libredirect")
+                img(src="./img/bmc.svg")
 
             p Bitcoin: <y>bc1qrhue0frps6p2vkg978u9ayethnwprtmfug827q</y>

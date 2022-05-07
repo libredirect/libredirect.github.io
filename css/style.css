@@ -60,8 +60,6 @@ embed {
     transform-origin: 0 0;
 }
 
-
-
 #body {
     width: 1080px;
     margin: 0 auto;
@@ -118,6 +116,11 @@ a:hover {
 
 a.badge img {
     height: 60px;
+    width: auto;
+}
+
+a.badge_medium img {
+    height: 40px;
     width: auto;
 }
 
