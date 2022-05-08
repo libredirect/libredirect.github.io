@@ -19,23 +19,24 @@ html(lang="en")
             h2#why_all_those_permissions <a href="#why_all_those_permissions">Why all those permissions?</a>
             p let's go on them one by one:
             ul
-                li <y>webRequest</y>, <y>webRequestBlocking</y>: To block http requests or redirect them. e.g to redirect to invidious before it can reach YouTube's servers.
+                li <y>webRequest</y>, <y>webRequestBlocking</y>: To block http requests or redirect them. e.g to redirect to Invidious before it can reach YouTube's servers.
                 li <y>storage</y>: To save LibRedirect's settings permanently.
-                li <y>cookies</y>: To apply settings on multiple instances. Note that we use localStorage too. Those options are disabled by default though.
-                li <y>menus</y>: For adding some buttons to the right click:
+                li <y>cookies</y>: To apply settings across multiple instances. Note that we also use localStorage. Those options are disabled by default though.
+                li <y>menus</y>: For adding some buttons to the right click menu:
                 img(src="https://user-images.githubusercontent.com/40805353/160441937-dc0c71a9-bed1-4078-81a1-189f8ff21c0e.png")
-                li  <y>&lt;all_urls&gt;</y>: LibRedirect is dynamic and customizable. The targets e.g <a href="https://youtube.com">youtube.com</a>, <a href="https://twitter.com">twitter.com</a> are written in <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a> and are much more complicated than to be hard-coded in the manifest. Ex:  <a href="https://github.com/libredirect/libredirect/blob/master/src/assets/javascripts/helpers/search.js#L6=">search Regex</a>. Further more, we need to access the instances sites too to inject some localStorage variables. There's also an option to <y>Always Use Preferred instances</y> that is to even redirect of any other invidious instance to your selected instances. This has to be dynamic and you may even add a custom instance which can't at all be hard-coded.
+                li  <y>&lt;all_urls&gt;</y>: LibRedirect is dynamic and customizable. The targets e.g <a href="https://youtube.com">youtube.com</a>, <a href="https://twitter.com">twitter.com</a> are written in <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a> and are much more complicated than to be hard-coded in the manifest. Ex:  <a href="https://github.com/libredirect/libredirect/blob/master/src/assets/javascripts/helpers/search.js#L6=">search Regex</a>. Further more, we need to access the instances sites too to inject some localStorage variables. There's also an option to <y>Always Use Preferred instances</y> that is to even redirect of any other Invidious instance to your selected instances. This has to be dynamic and you may even add a custom instance which can't at all be hard-coded.
 
             h2#where_the_hell_are_those_instances_coming_from <a href="#where_the_hell_are_those_instances_coming_from">Where the hell are those instances coming from?</a>
-            p Every frontend project has a list of public instances. Ex: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch these lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept it at all. Those instances aren't our responsibility, they're the projects maintainers'. Exceptions though with Piped, we still only add the official instances but manually as only the API links are <a href="https://github.com/TeamPiped/Piped/wiki/Instances">provided</a>. Mainly this is <a href="https://github.com/EdwardLangdon">EdwardLangdon</a>'s job.
+            p Every frontend project has a list of public instances. Ex: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch those lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept it nor modify the lists. They're not our responsibility, they're the projects maintainers'.<br>
+                |Exceptions though with Piped. We still only add the official instances but manually as only the API links are <a href="https://github.com/TeamPiped/Piped/wiki/Instances">provided</a>. Mainly this is <a href="https://github.com/EdwardLangdon">EdwardLangdon</a>'s job.
 
 
             h2#why_not_using_a_single_reputable_instance <a href="#why_not_using_a_single_reputable_instance">Why not using a single reputable instance?</a>
             p We can make all the redirections based on e.g <a href="https://pussthecat.org/">pussthecat.org</a>. This server is a really reputable and trusted server. Problem is that we'll just kill it with DDoS attacks. Most of these servers are small and some are even hosted from homes. Though if they were somehow able to handle the load, then they won't be able to handle the costs.
-            p At the end, each person should pick use an instance that he trusts. Using multiple instances also helps in mixing your data together as it's not exiting from just one end.
+            p At the end, each person should pick and use one or more instances that he trusts. It's his own choice.
 
             h2#it_is_not_working_at_all <a href="#it_is_not_working_at_all">It's not working at all!</a>
-            p This happens weirdly after updating LibRedirect. Just reinstall it. If this didn't help, open an <a href="https://github.com/libredirect/libredirect/issues">issue</a>.
+            p This happens weirdly after updating to a new version. Just reinstall it. If it didn't help, open an <a href="https://github.com/libredirect/libredirect/issues">issue</a>.
 
             h2#chrome_web_store <a href="#chrome_web_store">Chrome Web Store?</a>
             p We can't publish it to the Chrome Web Store as it requires manifest v3 and we use manifest v2. You can still <a href="https://github.com/libredirect/libredirect/blob/master/chromium.md">install</a> it though.
