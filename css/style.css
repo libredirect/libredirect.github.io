@@ -25,7 +25,7 @@ body {
 div.nav_bar {
     margin: 0 auto;
     margin-top: 20px;
-    width: 550px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
 }
