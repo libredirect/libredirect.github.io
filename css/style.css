@@ -80,7 +80,7 @@ embed {
     align-items: center;
 }
 
-#description div{
+#description div {
     width: 700px;
 }
 
@@ -109,8 +109,11 @@ a.badge {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
-    /* color: #fbc117; */
     text-decoration: underline;
 }
 
@@ -124,7 +127,23 @@ a.badge_medium img {
     width: auto;
 }
 
+.mono {
+    font-family: monospace;
+    word-break: break-all;
+}
+
 @media only screen and (max-width: 1080px) {
+
+    div.nav_bar {
+        width: 99%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #logo {
+        margin-top: 20px;
+    }
 
     #logo h1 {
         font-size: 200%;
@@ -136,7 +155,7 @@ a.badge_medium img {
     }
 
     #body {
-        width: 80%;
+        width: 95%;
     }
 
     #description {
