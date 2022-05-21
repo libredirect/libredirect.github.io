@@ -13,6 +13,31 @@ html(lang="en")
 
             include widgets/nav_bar.pug
 
+            h2#suggest_frontend <a href="#suggest_frontend">Suggest a Frontend</a>
+
+            p Requirements
+            ol
+                li Open Source
+                li Enhances privacy over main site
+                li Can be self-hosted so decentralized
+                li Using it is really hard without automated redirections
+
+            p Good Examples
+            ul
+                li <a href="https://github.com/zedeus/nitter" class="green">Nitter</a>
+                li <a href="https://github.com/iv-org/invidious" class="green">Invidious</a>
+                li <a href="https://github.com/spikecodes/libreddit" class="green">Libreddit</a>
+                li <a href="https://git.sr.ht/~metalune/simplytranslate_web" class="green">SimplyTranslate</a>
+
+            p Bad Examples
+            ul
+                li <a href="https://pixiv.moe/" class="red">PixivMoe</a> one instance, requires login, uses google analytics
+                li <a href="https://www.startpage.com/" class="red">Startpage</a> there's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search">extension</a> for it, doesn't require automated redirections. Just set it as your default search engine ¯\_(ツ)_/¯
+                li <a href="https://old.reddit.com/" class="red">Old Reddit</a> there's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search">extension</a> for it
+                li <a href="https://pinafore.social/" class="red">Pinafore</a> it's is a full featured web app for <a href="https://joinmastodon.org/">Mastodon</a>, not a frontend
+                li <a href="https://playsoju.netlify.app/" class="red">Soju</a> it's just a website that gives you samples of spotify songs, not a frontend. If you want to use it. just visit there <a href="https://playsoju.netlify.app/">website</a> and paste the spotify link you want to get a sample of.
+
+
             h2#why_forking_privacy_redirect <a href="#why_forking_privacy_redirect">Why forking Privacy Redirect?</a>
             p <a href="https://github.com/SimonBrazell/privacy-redirect">Privacy Redirect</a> hasn't been maintained since 6/12/2021. Many instances are hard coded and should be removed as they became offline and many others should be added. Many Pull Requests were just pending and waiting. So we stepped in. This was the main reason. Later though, we started improving more by adding new features and frontends.
 

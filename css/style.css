@@ -94,7 +94,7 @@ p, li {
     margin: 10px 0;
 }
 
-ul {
+ul.clear {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -103,6 +103,14 @@ ul {
 a {
     color: #fff;
     color: #ffd65b;
+}
+
+.red {
+    color: rgb(255, 43, 43);
+}
+
+.green {
+    color: rgb(0, 207, 0);
 }
 
 a.badge {
