@@ -94,6 +94,11 @@ p, li {
     margin: 10px 0;
 }
 
+.unify {
+    font-size: 18px;
+    line-height: 16pt;
+}
+
 ul.clear {
     list-style-type: none;
     margin: 0;
