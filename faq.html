@@ -47,17 +47,17 @@
       <h2 id="why_all_those_permissions"><a href="#why_all_those_permissions">Why all those permissions?</a></h2>
       <p>let's go on them one by one:</p>
       <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest">webRequest</a>, <y>webRequestBlocking</y>: To block <code>http</code> requests or redirect them. Examply like, To redirect to Invidious before it can reach YouTube's servers.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest">webRequest</a>, <y>webRequestBlocking</y>: To block <code>http</code> requests or redirect them. Examples like, To redirect to Invidious before it can reach YouTube's servers.</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage</a>: To save LibRedirect's settings permanently.</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies">cookies</a>: To apply settings across multiple instances. Note that we also use localStorage. Those options are disabled by default though.</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>: For adding some buttons to the right click menu:</li><img src="https://user-images.githubusercontent.com/40805353/160441937-dc0c71a9-bed1-4078-81a1-189f8ff21c0e.png">
         <li> <y>&lt;all_urls&gt;</y>: LibRedirect is dynamic and customizable. The targets e.g <a href="https://youtube.com">youtube.com</a>, <a href="https://twitter.com">twitter.com</a> are written in <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a> and are much more complicated than to be hard-coded in the manifest. Ex:  <a href="https://github.com/libredirect/libredirect/blob/master/src/assets/javascripts/helpers/search.js#L6=">search Regex</a>. Further more, we need to access the instances sites too to inject some localStorage variables.</li>
       </ul>
       <h2 id="where_the_hell_are_those_instances_coming_from"><a href="#where_the_hell_are_those_instances_coming_from">Where the hell are those instances coming from?</a></h2>
-      <p>Every frontend project has a list of public instances. Ex: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch those lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept it nor modify the lists. They're not our responsibility, they're the projects maintainers' except Piped because the Project Maintainer doens't maintain URL of Instances rather API links to connect to other Instances via Frontend.</p>
+      <p>Every frontend project has a list of public instances. Ex: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch those lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept it nor modify the lists. They're not our responsibility, they're the projects maintainers'. </p>
       <h2 id="why_not_using_a_single_reputable_instance"><a href="#why_not_using_a_single_reputable_instance">Why not using a single reputable instance?</a></h2>
       <p>We can make all the redirections based on e.g <a href="https://pussthecat.org/">pussthecat.org</a>. This server is a really reputable and trusted server. Problem is that we'll just kill it with DDoS attacks. Most of these servers are small and some are even hosted from homes. Though if they were somehow able to handle the load, then they won't be able to handle the costs.</p>
-      <p>At the end, each person should pick and use one or more instances that the user trusts. It's their own choice.</p>
+      <p>At the end, every person should pick and use one or more instances that the user trusts. It's their own choice.</p>
       <h2 id="it_is_not_working_at_all"><a href="#it_is_not_working_at_all">It's not working at all!</a></h2>
       <p>This happens weirdly after updating to a new version. Just reinstall it. If it didn't help, open an <a href="https://github.com/libredirect/libredirect/issues">issue</a>.</p>
       <h2 id="chrome_web_store"><a href="#chrome_web_store">Chrome Web Store?</a></h2>
@@ -76,18 +76,11 @@
       <p>This setting is to make the use of multiple instances consistent by unifying all the settings such as theme, language, etc...</p>
       <p>You use it by visiting one of your selected instances. Go to it's settings page. Change it's settings. Then press the Unify Button from Popup. This will copy all the settings from the current instance to all the other selected instances.</p>
       <h2 id="Working_of_unify"><a href="#Working_of_unify">Working of Unify Settings</a>
-        <p> Usually they're stored using cookies. We just copy those cookies to the other instances. By The Way, We don't copy critical cookies that have tokens or credential data. We copy only the cookies for customization. Some instances use localStorage instead of cookies such as Piped. We copy it too but with a different approach, though you as the user will have the same result.</p>
+        <p> Usually they're stored using cookies. We just copy those cookies to the other instances. By The Way, We don't copy </p>critical cookies that have tokens or credential data. We copy only the cookies for customization. Some instances use 
+        localStorage instead of cookies such as Piped. We copy it too but with a different approach, though you as the user will 
+        have the same result.
         <p> The Data is stored forever within Libredirect and also gets exported when you use the Export Function to backup your settings. </p>
-      </h2>
-      <h2 id="Removed_functionalites_changes"><a href="Removed_functionalites_changes">Removed Functionalities and Changes</a></h2>
-      <p>As of Libredirect v2.0, The Following Functionalities are removed or replaced :
-        <p>1. Custom Settings for Frontends, instead Unify Settings will be used.</p>
-        <p>2. Removed 'Bypass feature from YouTube, Nitter and Libreddit', If you want to reinstate back in the next release. Raise your voice here in this Github Issue : <a href="https://github.com/libredirect/libredirect/issues/277">https://github.com/libredirect/libredirect/issues/277</a></p>
-        <p>3. Always used Preferred Instances because it just makes more confusion and complexity to the code than it's benefits. </p>
-        <p>4. Instances that use Cloudflare CDN are disabled by default because Cloudflare CDN may acts as an Man-in-the-Middle Attack and get unencrypted data about you.</p>
-        <p>5. Frontends such as Librespeed, PixivMoe and Soju are removed.</p>
-        <p>6. Beatbump is disabled by Default because the Only Instance of it uses Clouflare CDN.</p>
-      </p><br><br><br>
+      </h2><br><br><br>
     </div>
   </body>
 </html>
