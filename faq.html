@@ -23,8 +23,8 @@
       <p>Requirements</p>
       <ol>
         <li>Open Source</li>
-        <li>Enhances privacy over main site</li>
-        <li>Can be self-hosted so decentralized</li>
+        <li>Enhances Privacy over main site</li>
+        <li>Can be self-hosted. So, It's Decentralized</li>
         <li>Using it is really hard without automated redirections</li>
       </ol>
       <p>Good Examples</p>
@@ -36,34 +36,37 @@
       </ul>
       <p>Bad Examples</p>
       <ul>
-        <li><a href="https://pixiv.moe/" class="red">PixivMoe</a> one instance, requires login, uses google analytics</li>
-        <li><a href="https://www.startpage.com/" class="red">Startpage</a> there's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search">extension</a> for it, doesn't require automated redirections. Just set it as your default search engine ¯\_(ツ)_/¯</li>
-        <li><a href="https://old.reddit.com/" class="red">Old Reddit</a> there's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search">extension</a> for it</li>
-        <li><a href="https://pinafore.social/" class="red">Pinafore</a> it's is a full featured web app for <a href="https://joinmastodon.org/">Mastodon</a>, not a frontend</li>
-        <li><a href="https://playsoju.netlify.app/" class="red">Soju</a> it's just a website that gives you samples of spotify songs, not a frontend. If you want to use it. just visit there <a href="https://playsoju.netlify.app/">website</a> and paste the spotify link you want to get a sample of.</li>
+        <li><a href="https://pixiv.moe/" class="red">PixivMoe</a> - Only 1 instance, requires login, uses Google Analytics</li>
+        <li><a href="https://www.startpage.com/" class="red">Startpage</a> - There's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/">extension</a> for it, doesn't require automated redirections. Just set it as your default Search Engine ¯\_(ツ)_/¯</li>
+        <li><a href="https://old.reddit.com/" class="red">Old Reddit</a> - There's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect/">extension</a> for it</li>
+        <li><a href="https://pinafore.social/" class="red">Pinafore</a> - It's is a full featured web app for <a href="https://joinmastodon.org/">Mastodon</a>, not a frontend</li>
+        <li><a href="https://playsoju.netlify.app/" class="red">Soju</a> - It's just a website that gives you samples of spotify songs, not a frontend. If you want to use it, just visit their <a href="https://playsoju.netlify.app/">website</a> and paste the spotify link you want to get a sample of.</li>
       </ul>
       <h2 id="why_forking_privacy_redirect"><a href="#why_forking_privacy_redirect">Why forking Privacy Redirect?</a></h2>
       <p><a href="https://github.com/SimonBrazell/privacy-redirect">Privacy Redirect</a> hasn't been maintained since 6/12/2021. Many instances are hard coded and should be removed as they became offline and many others should be added. Many Pull Requests were just pending and waiting. So we stepped in. This was the main reason. Later though, we started improving more by adding new features and frontends.</p>
       <h2 id="why_all_those_permissions"><a href="#why_all_those_permissions">Why all those permissions?</a></h2>
       <p>let's go on them one by one:</p>
       <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest">webRequest</a>, <y>webRequestBlocking</y>: To block http requests or redirect them. e.g to redirect to Invidious before it can reach YouTube's servers.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest">webRequest</a>, <y>webRequestBlocking</y>: To block <code>http</code> requests or redirect them. Examples like, To redirect to Invidious before it can reach YouTube's servers.</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage</a>: To save LibRedirect's settings permanently.</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies">cookies</a>: To apply settings across multiple instances. Note that we also use localStorage. Those options are disabled by default though.</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>: For adding some buttons to the right click menu:</li><img src="https://user-images.githubusercontent.com/40805353/160441937-dc0c71a9-bed1-4078-81a1-189f8ff21c0e.png">
         <li> <y>&lt;all_urls&gt;</y>: LibRedirect is dynamic and customizable. The targets e.g <a href="https://youtube.com">youtube.com</a>, <a href="https://twitter.com">twitter.com</a> are written in <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a> and are much more complicated than to be hard-coded in the manifest. Ex:  <a href="https://github.com/libredirect/libredirect/blob/master/src/assets/javascripts/helpers/search.js#L6=">search Regex</a>. Further more, we need to access the instances sites too to inject some localStorage variables.</li>
       </ul>
       <h2 id="where_the_hell_are_those_instances_coming_from"><a href="#where_the_hell_are_those_instances_coming_from">Where the hell are those instances coming from?</a></h2>
-      <p>Every frontend project has a list of public instances. Ex: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch those lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept it nor modify the lists. They're not our responsibility, they're the projects maintainers'.</p>
+      <p>Every frontend project has a list of public instances. Ex: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch those lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept it nor modify the lists. They're not our responsibility, they're the projects maintainers'. </p>
       <h2 id="why_not_using_a_single_reputable_instance"><a href="#why_not_using_a_single_reputable_instance">Why not using a single reputable instance?</a></h2>
       <p>We can make all the redirections based on e.g <a href="https://pussthecat.org/">pussthecat.org</a>. This server is a really reputable and trusted server. Problem is that we'll just kill it with DDoS attacks. Most of these servers are small and some are even hosted from homes. Though if they were somehow able to handle the load, then they won't be able to handle the costs.</p>
-      <p>At the end, each person should pick and use one or more instances that he trusts. It's his own choice.</p>
+      <p>At the end, every person should pick and use one or more instances that the user trusts. It's their own choice.</p>
       <h2 id="it_is_not_working_at_all"><a href="#it_is_not_working_at_all">It's not working at all!</a></h2>
       <p>This happens weirdly after updating to a new version. Just reinstall it. If it didn't help, open an <a href="https://github.com/libredirect/libredirect/issues">issue</a>.</p>
       <h2 id="chrome_web_store"><a href="#chrome_web_store">Chrome Web Store?</a></h2>
-      <p>We can't publish it to the Chrome Web Store as it requires manifest v3 and we use manifest v2. You can still <a href="https://github.com/libredirect/libredirect/blob/master/chromium.md">install</a> it though.</p>
-      <h2 id="why_not_manifest_v3"><a href="#why_not_manifest_v3">Why not manifest v3?</a></h2>
-      <p>Read this: <a class="mono" href="https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144">https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144</a></p><br><br><br>
+      <p>We can't publish it to the Chrome Web Store as it requires manifest v3 and we use manifest v2. You can still <a href="https://github.com/libredirect/libredirect/blob/master/chromium.md">Install</a> it though. We are planning to adapt to Manifest v3 in Firefox as they will support the feature LibRedirect needs. If other Browsers do support Mozilla Policy. You might see LibRedirect in Chrome Web Store.</p>
+      <h2 id="why_not_manifest_v3"><a href="#why_not_manifest_v3">Why not manifest v3?</a>            </h2>
+      <p>Read this: <a href="https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144">https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144</a></p>
+      <h2 id="what_is_unify_settings"><a href="#what_is_unify_settings">What is Unify Settings?</a>   </h2>
+      <p>This feature is to make the use of multiple instances consistent by unifying cookie settings such as theme, language etc...</p>
+      <p>You use it by visiting one of your selected instances. Go to it's settings page. Change it's settings. Then press the Unify Button from Popup. This will copy all the settings from the current instance to all the other selected instances.</p><br><br><br>
     </div>
   </body>
 </html>
