@@ -11,15 +11,18 @@
     <meta property="og:title" content="LibRedirect - privacy-friendly Redirector">
     <meta property="og:site_name" content="libredirect.github.io">
     <meta property="og:description" content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends">
-    <title>Download</title>
+    <title>Docs</title>
   </head>
   <body> 
-    <div id="body"> 
-      <div id="logo"> <img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon">
+    <div id="body">
+      <div id="logo"><img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon">
         <h1>LibRedirect</h1>
       </div>
       <div class="nav_bar"> <a href="./index.html">Home</a><a href="./download.html">Download</a><a href="./source_code.html">Source Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a href="./docs.html">Docs</a><a href="./donate.html">Donate</a></div>
-      <h2>Download</h2><br><a class="badge" href="https://addons.mozilla.org/firefox/addon/libredirect/"><img src="./img/badge-amo.png"></a><a class="badge" href="https://microsoftedge.microsoft.com/addons/detail/libredirect/aodffkeankebfonljgbcfbbaljopcpdb"><img src="./img/badge-ms.png"></a><a class="badge" href="https://github.com/libredirect/libredirect/blob/master/chromium.md"><img src="./img/badge-chromium.png"></a>
+      <h2 id="Working_of_unify"><a href="#working_of_unify">Working of Unify Settings</a></h2>
+      <p class="unify">Usually they're stored using cookies. We just copy those cookies to the other instances. Btw we don't copy critical cookies that have tokens or credential data. We copy only the cookies for customization such as theme, language, preffered layout, etc...</p><img src="img/docs/libreddit_cookies.png" alt="libreddit_cookies.png"><img src="img/docs/chromium_cookies.png" alt="chromium_cookies.png">
+      <p>Some frontends use localStorage instead of cookies such as Piped. We copy it too but with a different approach, though you the user will have the same result.</p><img src="img/docs/piped_localStorage.png" alt="piped_localStorage.png">
+      <p class="unify">The Data is stored forever within Libredirect and also gets exported when you use the Export Function to backup your settings. </p><br><br><br>
     </div>
   </body>
 </html>

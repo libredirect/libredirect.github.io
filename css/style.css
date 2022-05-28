@@ -13,6 +13,10 @@ body {
     justify-content: center;
 }
 
+img {
+    width: 100%;
+}
+
 #logo img {
     width: 120px;
 }
@@ -25,7 +29,7 @@ body {
 div.nav_bar {
     margin: 0 auto;
     margin-top: 20px;
-    width: 600px;
+    width: 660px;
     display: flex;
     justify-content: space-between;
 }
@@ -133,6 +137,7 @@ a:hover {
 a.badge img {
     height: 60px;
     width: auto;
+    margin-right: 10px;
 }
 
 a.badge_medium img {
