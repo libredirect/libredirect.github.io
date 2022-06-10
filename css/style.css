@@ -103,6 +103,10 @@ p, li {
     line-height: 16pt;
 }
 
+.menu {
+    max-width: fit-content;
+    max-height: fit-content;
+}
 ul.clear {
     list-style-type: none;
     margin: 0;

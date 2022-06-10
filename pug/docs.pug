@@ -13,6 +13,14 @@ html(lang="en")
 
             include widgets/nav_bar.pug
 
+            h2#Keyboard_Shortcuts <a href="#Keyboard_Shortcuts">Keyboard Shortcuts</a>
+
+            p(class=keyboard) Libredirect offers the following Keyboard shortcuts for easier access
+
+            li <code>Shift+Alt+L</code> - To Switch the instance you are currently in
+            li <code>Shift+Alt+C</code> - Copies the original link. Ex: Copies the original Twitter link when you are in Nitter website
+            li <code>Shift+Alt+U</code> - Shortcut to initiate Unify Settings. In other words, Copies the preferences (cookies, localStorage) from the current opened instance and copy them to all the other selected instances
+
             h2#Working_of_unify <a href="#working_of_unify">Working of Unify Settings</a>
             p(class="unify") Usually they're stored using cookies. We just copy those cookies to the other instances. Btw we don't copy critical cookies that have tokens or credential data. We copy only the cookies for customization such as theme, language, preffered layout, etc...
             
@@ -26,6 +34,7 @@ html(lang="en")
 
             p(class="unify") The Data is stored forever within Libredirect and also gets exported when you use the Export Function to backup your settings. 
             
+
             br
             br
             br
