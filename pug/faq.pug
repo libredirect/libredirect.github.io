@@ -48,7 +48,7 @@ html(lang="en")
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage</a>: To save LibRedirect's settings permanently.
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies">cookies</a>: To apply settings across multiple instances. Note that we also use localStorage. Those options are disabled by default though.
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>: For adding some buttons to the right click menu:
-                img (class="menu", src="https://user-images.githubusercontent.com/40805353/160441937-dc0c71a9-bed1-4078-81a1-189f8ff21c0e.png")
+                img(class="menu", src="https://user-images.githubusercontent.com/40805353/160441937-dc0c71a9-bed1-4078-81a1-189f8ff21c0e.png")
                 li  <y>&lt;all_urls&gt;</y>: LibRedirect is dynamic and customizable. The targets e.g <a href="https://youtube.com">youtube.com</a>, <a href="https://twitter.com">twitter.com</a> are written in <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a> and are much more complicated than to be hard-coded in the manifest. Ex:  <a href="https://github.com/libredirect/libredirect/blob/master/src/assets/javascripts/helpers/search.js#L6=">search Regex</a>. Further more, we need to access the instances sites too to inject some localStorage variables.
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/privacy">privacy</a>: To know if the browser uses <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies#first-party_isolation">First-party isolation</a>. This is important for creating cookies that the Tor Browser will accept. btw we only read and don't modify any privacy setting.
 
@@ -58,9 +58,6 @@ html(lang="en")
             h2#why_not_using_a_single_reputable_instance <a href="#why_not_using_a_single_reputable_instance">Why not using a single reputable instance?</a>
             p We can make all the redirections based on e.g <a href="https://pussthecat.org/">pussthecat.org</a>. This server is a really reputable and trusted server. Problem is that we'll just kill it with DDoS attacks. Most of these servers are small and some are even hosted from homes. Though if they were somehow able to handle the load, then they won't be able to handle the costs.
             p At the end, every person should pick and use one or more instances that the user trusts. It's their own choice.
-
-            h2#it_is_not_working_at_all <a href="#it_is_not_working_at_all">It's not working at all!</a>
-            p This happens weirdly after updating to a new version. Just reinstall it. If it didn't help, open an <a href="https://github.com/libredirect/libredirect/issues">issue</a>.
 
             h2#chrome_web_store <a href="#chrome_web_store">Chrome Web Store?</a>
 
