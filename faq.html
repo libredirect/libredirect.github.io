@@ -66,7 +66,7 @@
       <div class="incognito">
         <h2 id="incognito"><a href="#incognito">Why does a page appear when I open Private Browsing mode ?</a></h2>
         <p>If you see the image below, you might get suspicious that why is libredirect initializing Cookies in Private Browsing mode.</p><img src="./img/faq/Incognito.png">
-        <p>The reason is, we apply the settings you have saved in Unify Settings for frontends to work in Private Browsing mode too. For that, we copy the cookies to the Temporary cookies storage of Private Browsing mode. We give a prompt like in the image when we do apply your settings. It almost closes instantly to not interupt you. We don't collect or copy any other critical data other than the intended purposes.</p>
+        <p>This is related to the Unify Settings feature. It's for initializing cookies. Normally it runs in the background. However, in Incognito mode, you can't initialize cookies unless you open a separate window in Incognito and run the initializer script. Basically it fires a script that initializes cookies: <a href="https://github.com/libredirect/libredirect/blob/master/src/pages/background/incognito.js">https://github.com/libredirect/libredirect/blob/master/src/pages/background/incognito.js</a></p>
       </div>
       <h2 id="what_is_unify_settings"><a href="#what_is_unify_settings">What is Unify Settings?</a>   </h2>
       <p>This feature is to make the use of multiple instances consistent by unifying cookie settings such as theme, language etc...</p>
