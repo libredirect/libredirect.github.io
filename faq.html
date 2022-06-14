@@ -63,6 +63,11 @@
       <p>We can't publish it to the Chrome Web Store as it requires manifest v3 and we use manifest v2. You can still <a href="https://github.com/libredirect/libredirect/blob/master/chromium.md">Install</a> it though. We are planning to adapt to Manifest v3 in Firefox as they will support the feature LibRedirect needs. If other Browsers do support Mozilla Policy. You might see LibRedirect in Chrome Web Store.</p>
       <h2 id="why_not_manifest_v3"><a href="#why_not_manifest_v3">Why not manifest v3?</a>            </h2>
       <p>Read this: <a href="https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144">https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144</a></p>
+      <div class="incognito">
+        <h2 id="incognito"><a href="#incognito">Why does a page appear when I open Private Browsing mode ?</a></h2>
+        <p>If you see the image below, you might get suspicious that why is libredirect initializing Cookies in Private Browsing mode.</p><img src="./img/faq/Incognito.png">
+        <p>The reason is, we apply the settings you have saved in Unify Settings for frontends to work in Private Browsing mode too. For that, we copy the cookies to the Temporary cookies storage of Private Browsing mode. We give a prompt like in the image when we do apply your settings. It almost closes instantly to not interupt you. We don't collect or copy any other critical data other than the intended purposes.</p>
+      </div>
       <h2 id="what_is_unify_settings"><a href="#what_is_unify_settings">What is Unify Settings?</a>   </h2>
       <p>This feature is to make the use of multiple instances consistent by unifying cookie settings such as theme, language etc...</p>
       <p>You use it by visiting one of your selected instances. Go to its settings page. Change its settings. Then press the Unify Button from Popup. This will copy all the settings from the current instance to all the other selected instances.</p><br><br><br>

@@ -107,6 +107,13 @@ p, li {
     max-width: fit-content;
     max-height: fit-content;
 }
+
+.incognito {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
 ul.clear {
     list-style-type: none;
     margin: 0;
