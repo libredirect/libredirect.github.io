@@ -16,19 +16,20 @@ html(lang="en")
             h2#Keyboard_Shortcuts <a href="#Keyboard_Shortcuts">Keyboard Shortcuts</a>
 
                 p(class=keyboard) Libredirect offers the following Keyboard shortcuts for easier access
-
-                li <code>Shift+Alt+L</code> - To Switch the instance you are currently in
-                li <code>Shift+Alt+C</code> - Copies the original link. Ex: Copies the original Twitter link when you are in Nitter website
-                li <code>Shift+Alt+U</code> - Shortcut to initiate Unify Settings. In other words, Copies the preferences (cookies, localStorage) from the current opened instance and copy them to all the other selected instances
+                ul
+                    li <code>Shift+Alt+L</code> - To Switch the instance you are currently in
+                    li <code>Shift+Alt+C</code> - Copies the original link. Ex: Copies the original Twitter link when you are in Nitter website
+                    li <code>Shift+Alt+U</code> - Shortcut to initiate Unify Settings. In other words, Copies the preferences (cookies, localStorage) from the current opened instance and copy them to all the other selected instances
             
             h2#preferred_instance <a href="preferred_instance">Using Preferred Instance</a>
-
-                p In Older version of LibRedirect, There was an option called "Always Use preferred instance" which helped users to redirect to the instance they particular use instead of the other instances. But it was removed due to code complexity and breakage it caused in the extension.
-                p If you want to use your Preferred Instance instead of other instance. Just use `Switch Instance` feature from the popup or use the Keyboard Shortcut to go to your preferred ones.
+                p In Older version of LibRedirect, There was an option called "Always Use preferred instance" which helped users to redirect to the instance they particularly use instead of the other instances. But it was removed due to code complexity and breakage it caused in the extension.
+                p If you want to use your Preferred Instance instead of other instance. Just use <code>Switch Instance</code> feature from the popup or use the Keyboard Shortcut to go to your preferred ones.
                 p If you don't get it, Here is an example :
-                    li You have set your YouTube frontend as Piped and you go to a Invidious linked shared by others. Now, If you use `Switch Instance`, it will switch to Piped.
-                    li You have a particular instance selected such as <a href="nitter.it">nitter.it</a> in Nitter frontend and receive a <a href="nitter.net">nitter.net</a> link. But you want to use nitter.it instance. When you use 'Switch Instance` feature, you will be redirected.
+                    ul
+                        li You have set your YouTube frontend as Piped and you go to a Invidious link shared by others. Now, If you use <code>Switch Instance</code>, it will switch to Piped.
+                        li You have a particular instance selected such as <a href="nitter.it">nitter.it</a> in Nitter frontend and receive a <a href="nitter.net">nitter.net</a> link. But you want to use nitter.it instance. When you use 'Switch Instance` feature, you will be redirected.
                 p This applies for every frontend. You can use the shortcut for easier accessibility.
+                p Note that this will work only for links not Embeds.
 
             h2#Working_of_unify <a href="#working_of_unify">Working of Unify Settings</a>
             p(class="unify") Usually they're stored using cookies. We just copy those cookies to the other instances. Btw we don't copy critical cookies that have tokens or credential data. We copy only the cookies for customization such as theme, language, preffered layout, etc...
