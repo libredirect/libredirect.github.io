@@ -10,7 +10,7 @@
 
 - The pages are written in `pug` format and converted to `html` using [script.sh](./script.sh) or [script.bat](./script.bat)
 
-- Before working, You need to install `pug` by typing `npm install pug` in terminal.
+- Before working, You need to install `pug-cli` by typing `npm install pug-cli -g` in terminal.
     - Only if you do this the below will work
 
 - While working, Just Type `./script.bat` (For Windows) or `./script.sh` (For Linux and MacOS) in Terminal to execute the script files which will convert automatically from `pug` to `html`
