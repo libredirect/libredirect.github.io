@@ -1,0 +1,26 @@
+{
+	"name": "libredirect.github.io",
+	"description": "Redirects YouTube, Twitter, Instagram and more to privacy friendly frontends.",
+	"engines": {
+		"node": ">=16.13.1",
+		"npm": ">=8.1.2"
+	},
+	"scripts": {
+		"pug": "pug ./pug/*.pug -o ./ -P -w",
+		"prettier": "npx prettier --write .",
+		"instances": "python3 src/instances/get_instances.py; git update-index --assume-unchanged src/instances/blacklist.json src/instances/data.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/libredirect/libredirect.github.io"
+	},
+	"author": "LibRedirect",
+	"license": "GPL-3.0-only",
+	"homepage": "https://libredirect.github.io",
+	"devDependencies": {
+		"prettier": "2.7.1"
+	},
+	"dependencies": {
+		"pug-cli": "^1.0.0-alpha6"
+	}
+}
