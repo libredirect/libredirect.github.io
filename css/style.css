@@ -14,7 +14,8 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 80%;
+    object-fit: contain;
 }
 
 #logo img {
@@ -43,7 +44,7 @@ div.nav_bar a {
     padding: 10px;
 }
 
-y {
+.yellow {
     color: #ffd65b;
 }
 

@@ -19,29 +19,29 @@
         <h1>LibRedirect</h1>
       </div>
       <div class="nav_bar"> <a href="./index.html">Home</a><a href="./download.html">Download</a><a href="./source_code.html">Source Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a href="./docs.html">Docs</a><a href="./donate.html">Donate</a></div>
-      <h2 id="Keyboard_Shortcuts"><a href="#Keyboard_Shortcuts">Keyboard Shortcuts</a>
-        <p>Libredirect offers the following Keyboard shortcuts for easier access</p>
+      <h2 id="Keyboard_Shortcuts"><a href="#Keyboard_Shortcuts">Keyboard Shortcuts</a></h2>
+      <p>Libredirect offers the following Keyboard shortcuts for easier access</p>
+      <ul>
+        <li><code>Shift+Alt+L</code> - To Switch the instance you are currently in</li>
+        <li><code>Shift+Alt+C</code> - Copies the original link. Ex: Copies the original Twitter link when you are in Nitter website</li>
+        <li><code>Shift+Alt+U</code> - Shortcut to initiate Unify Settings. In other words, Copies the preferences (cookies, localStorage) from the current opened instance and copy them to all the other selected instances</li>
+      </ul>
+      <h2 id="preferred_instance"><a href="preferred_instance">Using Preferred Instance</a></h2>
+      <p>In Older version of LibRedirect, There was an option called "Always Use preferred instance" which helped users to redirect to the instance they particularly use instead of the other instances. But it was removed due to code complexity and breakage it caused in the extension.</p>
+      <p>If you want to use your Preferred Instance instead of other instance. Just use <code>Switch Instance</code> feature from the popup or use the Keyboard Shortcut to go to your preferred ones.</p>
+      <p>If you don't get it, Here is an example :
         <ul>
-          <li><code>Shift+Alt+L</code> - To Switch the instance you are currently in</li>
-          <li><code>Shift+Alt+C</code> - Copies the original link. Ex: Copies the original Twitter link when you are in Nitter website</li>
-          <li><code>Shift+Alt+U</code> - Shortcut to initiate Unify Settings. In other words, Copies the preferences (cookies, localStorage) from the current opened instance and copy them to all the other selected instances</li>
+          <li>You have set your YouTube frontend as Piped and you go to a Invidious link shared by others. Now, If you use <code>Switch Instance</code>, it will switch to Piped.</li>
+          <li>You have a particular instance selected such as <a href="nitter.it">nitter.it</a> in Nitter frontend and receive a <a href="nitter.net">nitter.net</a> link. But you want to use nitter.it instance. When you use 'Switch Instance` feature, you will be redirected.</li>
         </ul>
-      </h2>
-      <h2 id="preferred_instance"><a href="preferred_instance">Using Preferred Instance</a>
-        <p>In Older version of LibRedirect, There was an option called "Always Use preferred instance" which helped users to redirect to the instance they particularly use instead of the other instances. But it was removed due to code complexity and breakage it caused in the extension.</p>
-        <p>If you want to use your Preferred Instance instead of other instance. Just use <code>Switch Instance</code> feature from the popup or use the Keyboard Shortcut to go to your preferred ones.</p>
-        <p>If you don't get it, Here is an example :
-          <ul>
-            <li>You have set your YouTube frontend as Piped and you go to a Invidious link shared by others. Now, If you use <code>Switch Instance</code>, it will switch to Piped.</li>
-            <li>You have a particular instance selected such as <a href="nitter.it">nitter.it</a> in Nitter frontend and receive a <a href="nitter.net">nitter.net</a> link. But you want to use nitter.it instance. When you use 'Switch Instance` feature, you will be redirected.</li>
-          </ul>
-        </p>
-        <p>This applies for every frontend. You can use the shortcut for easier accessibility.</p>
-        <p>Note that this will work only for links not Embeds.</p>
-      </h2>
-      <h2 id="Working_of_unify"><a href="#working_of_unify">Working of Unify Settings</a></h2>
+      </p>
+      <p>This applies for every frontend. You can use the shortcut for easier accessibility.</p>
+      <p>Note that this will work only for links not Embeds.</p>
+      <h2 id="unify"><a href="#working_of_unify">Working of Unify Settings</a></h2>
       <p class="unify">Usually they're stored using cookies. We just copy those cookies to the other instances. Btw we don't copy critical cookies that have tokens or credential data. We copy only the cookies for customization such as theme, language, preffered layout, etc...</p><img src="img/docs/libreddit_cookies.png" alt="libreddit_cookies.png"><img src="img/docs/chromium_cookies.png" alt="chromium_cookies.png">
-      <p>Some frontends use localStorage instead of cookies such as Piped. We copy it too but with a different approach, though you the user will have the same result.</p><img src="img/docs/piped_localStorage.png" alt="piped_localStorage.png"><br><br><br>
+      <p>Some frontends use localStorage instead of cookies such as Piped. We copy it too but with a different approach, though you the user will have the same result.</p><img src="img/docs/piped_localStorage.png" alt="piped_localStorage.png">
+      <h2 id="search_engine_chromium"><a href="#search_engine_chromium">Settings LibRedirect as a Search Engine on Chromium</a></h2>
+      <p>Go to <span class="yellow">chrome://settings/searchEngines</span>. on <span class="yellow">Site search</span> click <span class="yellow">Add</span>. Then type:<br><strong>Search engine:</strong> LibRedirect<br><strong>Shortcut:</strong> libredirect<br><strong>URL with %s in place of query:</strong> http://search.libredirect.invalid/?q=%s</p><img src="img/docs/chromium_search_engine.png" alt=""><br><br><br>
     </div>
   </body>
 </html>
