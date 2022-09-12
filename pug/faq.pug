@@ -39,14 +39,14 @@ html(lang="en")
 
 
             h2#why_forking_privacy_redirect <a href="#why_forking_privacy_redirect">Why forking Privacy Redirect?</a>
-            p <a href="https://github.com/SimonBrazell/privacy-redirect">Privacy Redirect</a> hasn't been maintained since 6/12/2021. Many instances are hard coded and should be removed as they became offline and many others should be added. Many Pull Requests were just pending and waiting. So we stepped in. This was the main reason. Later though, we started improving more by adding new features and frontends.
+            p <a href="https://github.com/SimonBrazell/privacy-redirect">Privacy Redirect</a> hasn't been maintained since 6/12/2021. Many instances are hard coded. Some should be removed as they became offline and many others should be added. Many Pull Requests were left pending and waiting. So we stepped in. Later, we started improving it further by adding new features and frontends.
 
             h2#why_all_those_permissions <a href="#why_all_those_permissions">Why all those permissions?</a>
             p Let's examine them one by one:
             ul
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest">webRequest</a>, <y>webRequestBlocking</y>: To block <code>http</code> requests or redirect them. For example, to redirect to Invidious before it can reach YouTube's servers.
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage</a>: To save LibRedirect's settings permanently.
-                li <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText">Clipboard.writeText</a> : To write original link to clipboard while using Copy Raw. This permission is used to only write data. LibRedirect does not read the data in your clipboard.
+                li <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText">Clipboard.writeText</a> : To write the original link to the clipboard while using Copy Raw. This permission is used to only write data. LibRedirect does not read the data in your clipboard.
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies">cookies</a>: To apply settings across multiple instances. Note that we also use localStorage. Those options are disabled by default though.
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>: For adding some buttons to the right click menu:
                 img(class="menu", src="https://user-images.githubusercontent.com/40805353/160441937-dc0c71a9-bed1-4078-81a1-189f8ff21c0e.png")
@@ -54,15 +54,15 @@ html(lang="en")
                 li <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/privacy">privacy</a>: To know if the browser uses <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies#first-party_isolation">First-party isolation</a>. This is important for creating cookies that the Tor Browser will accept. We only read and don't modify any privacy setting.
 
             h2#where_the_hell_are_those_instances_coming_from <a href="#where_the_hell_are_those_instances_coming_from">Where the hell are those instances coming from?</a>
-            p Every frontend project has a list of public instances. Examples: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch those lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept it nor modify the lists. They're not our responsibility, they're the projects maintainers'. 
+            p Almost every frontend project has a list of public instances. Examples: <a href="https://api.invidious.io/">Invidious' official instances list</a>, <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch those lists using an automated <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>. This script gets triggered every 3 days. We don't intercept nor modify the lists. They're not our responsibility: they're the projects maintainers'. 
 
             h2#why_not_using_a_single_reputable_instance <a href="#why_not_using_a_single_reputable_instance">Why not using a single reputable instance?</a>
-            p LibRedirect is just a tool. We're not here to choose for you. It's your own choice. The default setting selects all instances except those using Cloudflare, but you should change it yourself.
-            p We can't know which instances are reputable for you and which aren't. The point of view is totally different to every person. It should be your point of view, not ours.
+            p LibRedirect is just a tool. We're not here to choose for you. It's your own choice. The default setting selects all instances except those using Cloudflare, but you can change it yourself.
+            p We can't know which instances are reputable for you and which aren't. Every person has a different point of view. LibRedirect should follow your point of view, not ours. 
 
             h2#chrome_web_store <a href="#chrome_web_store">Chrome Web Store?</a>
 
-            p We can't publish it to the Chrome Web Store as it requires Manifest v3 and we use Manifest v2. You can still <a href="https://github.com/libredirect/libredirect/blob/master/chromium.md">install</a> it though. We are planning to adapt to Manifest v3 in Firefox as they will support the feature LibRedirect needs. If other browsers do support Mozilla's policy, you might see LibRedirect in the Chrome Web Store.
+            p We can't publish it to the Chrome Web Store as it requires Manifest v3 and we use Manifest v2. You can still <a href="https://github.com/libredirect/libredirect/blob/master/chromium.md">install it manually</a>. We are planning to adopt Manifest v3 in Firefox as they will support the feature LibRedirect needs. If other browsers support Mozilla's policy, you might see LibRedirect in the Chrome Web Store.
 
             h2#why_not_manifest_v3 <a href="#why_not_manifest_v3">Why not Manifest v3?</a>            
 
@@ -72,7 +72,7 @@ html(lang="en")
 
             p This feature makes the use of multiple instances consistent by unifying cookie settings such as theme, language, etc.
 
-            p You use it by visiting one of your selected instances. Go to its settings page. Change its settings. Then press the Unify Button from Popup. This will copy all the settings from the current instance to all the other selected instances.
+            p To use it: visit one of your selected instances, go to its settings page, change its settings, then press "Unify Settings" in the popup. This will copy all the settings from the current instance and apply it to all the other selected instances.
 
             br 
             br
