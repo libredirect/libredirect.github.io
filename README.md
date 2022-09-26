@@ -1,3 +1,10 @@
+# Note
+
+**The Site is currently rebuild** by @edwardlangdon. It will be updated before the release of v2.3. So, Please be patient and if any information is not updated or wrong.
+
+So, Don't open any Pull Requests.
+
+---
 # Libredirect Official Site
 
 - No Javascript, Only HTML & CSS
@@ -6,11 +13,10 @@
 - Fully hosted on Github pages
 
 
-
 ## Installation
 
 ```bash
-npm install
+npm install pug
 ```
 
 ## Usage
