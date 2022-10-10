@@ -11,15 +11,15 @@ body {
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('Inter-VariableFont_slnt,wght.ttf');
+  font-family: "Inter";
+  src: url("Inter-VariableFont_slnt,wght.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Vazirmatn';
-  src: url('Vazirmatn-VariableFont_wght.ttf');
+  font-family: "Vazirmatn";
+  src: url("Vazirmatn-VariableFont_wght.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,14 +27,14 @@ body {
 body {
   margin: auto;
   padding: 0;
-  font-family: 'Inter';
+  font-family: "Inter";
   background-color: var(--bg-main);
   color: var(--text);
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 body.rtl {
-  font-family: 'Vazirmatn';
+  font-family: "Vazirmatn";
   /* line-height: 1; */
 }
 
@@ -51,14 +51,16 @@ div.some-block input[type="checkbox"] {
   color: var(--text);
 }
 
-img, svg {
+img,
+svg {
   margin-right: 10px;
   height: 26px;
   width: 26px;
   color: var(--text);
 }
 
-body.rtl img, body.rtl svg {
+body.rtl img,
+body.rtl svg {
   margin-right: 0px;
   margin-left: 10px;
 }
@@ -133,7 +135,6 @@ section.links a.selected {
 }
 
 input[type="range"] {
-  -webkit-appearance: none;
   width: 350px;
   height: 7px;
   border-radius: 50px;
@@ -223,7 +224,7 @@ div.some-block input[type="checkbox"] {
   height: 23px;
   background-color: var(--light-grey);
   border-radius: 50px;
-  transition: .4s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
@@ -242,7 +243,7 @@ div.some-block input[type="checkbox"]::before {
   left: 3.5px;
   background-color: white;
   border-radius: 50%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 body.rtl div.some-block input[type="checkbox"]::before {
@@ -351,7 +352,6 @@ div.checklist div {
   padding: 10px 0;
   word-wrap: break-word;
   display: flex;
-
 }
 
 div.checklist a {
