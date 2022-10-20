@@ -201,15 +201,29 @@
       <a href="#what_is_unify_settings">What is Unify Settings?</a>
     </h2>
     <p>
-      This feature makes the use of multiple instances consistent by unifying
-      cookie settings such as theme, language, etc.
+      This feature copies locally-stored settings such as theme, language, etc. across instances to make using multiple instances easier.
+      It does not support private/incognito mode.
+    </p>
+    <img alt="Unify Settings button in popup menu" src="https://user-images.githubusercontent.com/12092270/196612534-74138c30-a399-479e-ad5e-440dc14b406c.png">
+    <p>
+      To use it, visit one of your selected instances where you already have settings saved. 
+      Press "Unify Settings" in the popup menu or use the keyboard shortcut <code>Shift+Alt+U</code>.
+      This will copy the settings from the current instance to all your other selected instances.
     </p>
     <p>
-      To use it: visit one of your selected instances, go to its settings
-      page, change its settings, then press "Unify Settings" in the popup.
-      This will copy all the settings from the current instance and apply it
-      to all the other selected instances.
+      Unify Settings may behave differently for different frontends, as it depends on how each frontend saves settings.
+      For example:
     </p>
+    <ul>
+      <li>Piped saves settings in local storage, which unifies predictably across instances.</li>
+      <li>Libreddit saves settings as individual cookies, which unifies predictably across instances.</li>
+      <li>Nitter saves settings as individual cookies, but only saves settings you change from an instance's default. 
+        This means unifying settings can behave differently depending on which instance you unify from. Saving
+        certain settings requires unifying from specific instances, and some settings combinations may require unifying 
+        from multiple instances.
+      <li>Invidious saves its settings in a cookie with a nonstandard URL (<code>.&lt;domain&gt;</code> instead of <code>&lt;domain&gt;</code>),
+        so instances fail to consistently load unified settings..</li>
+    </ul>
     <br /><br /><br />
   </div>
 </body>
