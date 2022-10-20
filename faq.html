@@ -215,13 +215,14 @@
       For example:
     </p>
     <ul>
-      <li>Piped saves settings in local storage, easily unified across instances.</li>
-      <li>Libreddit saves settings as individual cookies, easily unified across instances.</li>
+      <li>Piped saves settings in local storage, which unifies predictably across instances.</li>
+      <li>Libreddit saves settings as individual cookies, which unifies predictably across instances.</li>
       <li>Nitter saves settings as individual cookies, but only saves settings you change from an instance's default. 
         This means unifying settings can behave differently depending on which instance you unify from. Saving
         certain settings requires unifying from specific instances, and some settings combinations may require unifying 
         from multiple instances.
-      <li>Invidious saves all its settings in one cookie, but currently does so in a way that prevents unifying them.</li>
+      <li>Invidious saves its settings in a cookie with a nonstandard URL (<code>.&lt;domain&gt;</code> instead of <code>&lt;domain&gt;</code>),
+        so instances fail to consistently load unified settings..</li>
     </ul>
     <br /><br /><br />
   </div>
