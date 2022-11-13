@@ -57,6 +57,19 @@
       When you add a site to the exceptions list it will not redirect as it is excluded from redirection.</p>
     <p>This exceptions is in short a manual allowlist not a <b>blocklist</b></p>
 
+    <h2 id="threshold"><a href="#Latency_threshold">Instances Latency</a></h2>
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
+          <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+        </svg>&nbsp;
+        <x>Test Instances Latency</x>
+    </p>
+    <p> You could have seen the above button at the end of every Frotends settings page. 
+      What this does is. By checking the value of Latency threshold in General settings.</p>
+    <p>For Example, if threshold is 1000ms, you have enabled all instances in a frontend, it will ping every instance and checks how much time it takes to 
+      establish connection, if it is above 1000ms, the instance is disabled. </p>
+    <p>In the future, we are <b>considering</b> re-enabling this disabled instance if it does not hit the threshold and giving users a choice to automatically check latency at certain intervals.</p>
+
     <h2 id="unify"><a href="#working_of_unify">How Unifying Preferences Works</a></h2>
     <p class="unify">Usually they're stored using cookies. We just copy those cookies to the other instances. Btw we
       don't copy critical cookies that have tokens or credential data. We copy only the cookies for customization such
