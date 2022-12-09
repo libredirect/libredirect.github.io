@@ -1,112 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/icon.svg">
-    <link rel="canonical" href="https://libredirect.github.io">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="LibRedirect - privacy-friendly Redirector">
-    <meta property="og:site_name" content="libredirect.github.io">
-    <meta property="og:description" content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends">
-    <title>LibRedirect</title>
-  </head>
-  <body> 
-    <div id="body"> 
-      <div id="logo"> <img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon">
-        <h1>LibRedirect</h1>
-      </div>
-      <div class="nav_bar"> <a href="./index.html">Home</a><a href="./download.html">Download</a><a href="./source_code.html">Source Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a href="./docs.html">Docs</a><a href="./donate.html">Donate</a></div>
-      <h2>A web extension that redirects YouTube, Twitter, Instagram, and other requests to alternative privacy friendly frontends and backends</h2>
-      <div id="description">
-        <div> 
-          <ul class="clear">
-            <li>
-              YouTube =>
-              <a href="https://github.com/iv-org/invidious">Invidious</a>,
-              <a href="https://github.com/TeamPiped/Piped">Piped</a>,
-              <a href="https://github.com/mmjee/Piped-Material">Piped-Material</a>,
-              <a href="https://sr.ht/~cadence/tube/">CloudTube</a>
-              <a href="https://github.com/FreeTubeApp/FreeTube">FreeTube</a>,
-              <a href="https://github.com/yattee/yattee">Yattee</a>
-            </li>
-            <li>
-              Twitter =>&nbsp;<a href="https://github.com/zedeus/nitter">Nitter</a></li>
-            <li>
-              Instagram =>&nbsp;<a href="https://sr.ht/~cadence/bibliogram/">Bibliogram</a></li>
-            <li>
-              TikTok =>&nbsp;<a href="https://github.com/pablouser1/ProxiTok">ProxiTok</a></li>
-            <li>
-              Reddit =>
-              <a href="https://github.com/spikecodes/libreddit">Libreddit</a>,
-              <a href="https://codeberg.org/teddit/teddit">Teddit</a>
-            </li>
-            <li>
-              Imgur =>&nbsp;<a href="https://codeberg.org/video-prize-ranch/rimgo">Rimgo</a></li>
-            <li>
-              Wikipedia =>&nbsp;<a href="https://codeberg.org/orenom/wikiless">Wikiless</a></li>
-            <li>
-              YouTube Music =>
-                <a href="https://github.com/snuffyDev/Beatbump">Beatbump</a>,
-              <a href="https://codeberg.org/Hyperpipe/Hyperpipe">Hyperpipe</a>
-            </li>
-            <li>
-              Medium =>&nbsp;<a href="https://sr.ht/~edwardloveall/Scribe/">Scribe</a></li>
-            <li>
-               Quora =>&nbsp;<a href="https://github.com/zyachel/quetre">Quetre</a></li>
-            <li>
-              Reuters =>&nbsp;<a href="https://github.com/HookedBehemoth/neuters">Neuters</a>   </li>
-            <li>
-              Peertube =>&nbsp;<a href="https://git.sr.ht/~metalune/simpleweb_peertube">SimpleerTube</a></li>
-            <li>
-              LBRY/Odysee =>
-              <a href="https://codeberg.org/librarian/librarian">Librarian</a>,
-              <a href="https://lbry.com/get">LBRY Desktop</a>
-            </li>
 
-            <li>
-               IMDb =>&nbsp;<a href="https://github.com/zyachel/libremdb">libremdb</a></li>
-            <li>
-              Search =>
-              <a href="https://github.com/searxng/searxng">SearXNG</a>,
-              <a href="https://searx.github.io/searx/">SearX</a>,
-              <a href="https://github.com/hnhx/librex">LibreX</a>,
-              <a href="https://benbusby.com/projects/whoogle-search/">Whoogle</a>
-            </li>
-            <li>
-              Translate =>
-              <a href="https://git.sr.ht/~metalune/simplytranslate_web">SimplyTranslate</a>,
-              <a href="https://github.com/TheDavidDelta/lingva-translate">LingvaTranslate</a>,
-              <a href="https://github.com/LibreTranslate/LibreTranslate">LibreTranslate</a>
-            </li>
-            <li>
-              Maps =>&nbsp;<a href="https://www.openstreetmap.org/">OpenStreetMap</a></li>
-            <li>
-              Send Files =>&nbsp;<a href="https://github.com/timvisee/send">Send</a></li>
-          </ul>
-        </div>
-        <div id="popup">
-          <embed type="text/html" src="./popup.html">
-        </div>
-      </div>
-      <h2>Why LibRedirect?</h2>
-      <p>Normally you watch YouTube videos through <a href="youtube.com">youtube.com</a>'s server. Problem is everything you watch is tied to your Google Account. Even if you didn't use an account, you're IP address is still visible. Even if you used <a href="https://www.torproject.org/">Tor</a>, you still have <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, a programming language that can get so much information about your browser and your system it's a little creepy. Just go to <a href="https://deviceinfo.me">deviceinfo.me</a> or <a href="https://www.amiunique.org">amiunique.org</a> and see how much information is available to know about you.<br></p>
-      <p>So, why not disabling JavaScript? Great idea! Now YouTube is broken as it requires JavaScript to function ¯\_(ツ)_/¯</p>
-      <p>There's a way though to make a script that scraps data off of <a href="youtube.com">youtube.com</a> and presents it in a nice simple webpage that doesn't require JavaScript. People have done this already! There's a project called <a href="https://github.com/iv-org/invidious">Invidious</a> that doesn't require JavaScript for you to watch YouTube videos, ex: <a href=https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ>https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ</a></p>
-      <p>Those (Invidious and others) are called alternative <span class="yellow">Frontends</span>, where you really are still using YouTube but with a different Interface, in our case a privacy friendly one.<br></p>
-      <p>Use an Invidious instance with JavaScript disabled + Tor, and it's almost impossible to know who watched that video.</p>
-      <p>The code for Invidious is open source and you can run it on your own home server or personal computer. People did this already and there's a ton of <a href="https://api.invidious.io/">Instances</a> that are basically servers running Invidious in different parts of the world.</p>
-      <p>Using an instance with multiple people helps to mix your data together as it only exists from one end. It's like using a shared library computer.</p>
-      <p>Using multiple instances (a random one each time) will also mix your data more as <a href="https://en.wikipedia.org/wiki/Logging_(software)">request logs</a> are now stored in multiple servers rather than in a single centralized one if they happen to store logs in the first place.</p>
-      <p>
-        Using a random instance and changing links each time from ex:<br><x class="mono"><a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a> => <a href="https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ">https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ</a></x><br> is a difficult process and best to be automated. Well, we did that!<br></p>
-      <p>LibRedirect's main functionality is to make the use of those instances easier by automating it. It makes life much more easier and privacy more convenient.</p>
-      <p><a href="./download.html">Download</a> and install it.</p>
-      <p>
-        Type or click on any youtube link you want, ex: <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a>.<br>It will automatically redirect you to a random Invidious instance. You can fine tune your redirections in the settings page.</p>
-      <p>Same with Twitter, Instagram, Reddit, Imgur, TikTok, Google Translate and much more!</p><br><br><br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="img/icon.svg">
+  <link rel="canonical" href="https://libredirect.github.io">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LibRedirect - privacy-friendly Redirector">
+  <meta property="og:site_name" content="libredirect.github.io">
+  <meta property="og:description"
+    content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends">
+  <title>LibRedirect</title>
+</head>
+
+<body>
+  <div id="body">
+    <div id="logo"> <img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon">
+      <h1>LibRedirect</h1>
     </div>
-  </body>
+    <div class="nav_bar"> <a href="./index.html">Home</a><a href="./download.html">Download</a><a
+        href="./source_code.html">Source Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a
+        href="./docs.html">Docs</a><a href="./donate.html">Donate</a></div>
+    <h2>A web extension that redirects YouTube, Twitter, Instagram, and other requests to alternative privacy friendly
+      frontends and backends</h2>
+    <div id="description">
+      <div>
+        <ul class="clear">
+          <li>
+            YouTube =>
+            <a href="https://github.com/iv-org/invidious">Invidious</a>,
+            <a href="https://github.com/TeamPiped/Piped">Piped</a>,
+            <a href="https://github.com/mmjee/Piped-Material">Piped-Material</a>,
+            <a href="https://sr.ht/~cadence/tube/">CloudTube</a>
+            <a href="https://github.com/FreeTubeApp/FreeTube">FreeTube</a>,
+            <a href="https://github.com/yattee/yattee">Yattee</a>
+          </li>
+          <li>
+            Twitter =>&nbsp;<a href="https://github.com/zedeus/nitter">Nitter</a></li>
+          <li>
+            Instagram =>&nbsp;<a href="https://sr.ht/~cadence/bibliogram/">Bibliogram</a></li>
+          <li>
+            TikTok =>&nbsp;<a href="https://github.com/pablouser1/ProxiTok">ProxiTok</a></li>
+          <li>
+            Reddit =>
+            <a href="https://github.com/spikecodes/libreddit">Libreddit</a>,
+            <a href="https://codeberg.org/teddit/teddit">Teddit</a>
+          </li>
+          <li>
+            Imgur =>&nbsp;<a href="https://codeberg.org/video-prize-ranch/rimgo">Rimgo</a></li>
+          <li>
+            Wikipedia =>&nbsp;<a href="https://codeberg.org/orenom/wikiless">Wikiless</a></li>
+          <li>
+            YouTube Music =>
+            <a href="https://github.com/snuffyDev/Beatbump">Beatbump</a>,
+            <a href="https://codeberg.org/Hyperpipe/Hyperpipe">Hyperpipe</a>
+          </li>
+          <li>
+            Medium =>&nbsp;<a href="https://sr.ht/~edwardloveall/Scribe/">Scribe</a></li>
+          <li>
+            Quora =>&nbsp;<a href="https://github.com/zyachel/quetre">Quetre</a></li>
+          <li>
+            Reuters =>&nbsp;<a href="https://github.com/HookedBehemoth/neuters">Neuters</a> </li>
+          <li>
+            Peertube =>&nbsp;<a href="https://git.sr.ht/~metalune/simpleweb_peertube">SimpleerTube</a></li>
+          <li>
+            LBRY/Odysee =>
+            <a href="https://codeberg.org/librarian/librarian">Librarian</a>,
+            <a href="https://lbry.com/get">LBRY Desktop</a>
+          </li>
+
+          <li>
+            IMDb =>&nbsp;<a href="https://github.com/zyachel/libremdb">libremdb</a></li>
+          <li>
+            Search =>
+            <a href="https://github.com/searxng/searxng">SearXNG</a>,
+            <a href="https://searx.github.io/searx/">SearX</a>,
+            <a href="https://github.com/hnhx/librex">LibreX</a>,
+            <a href="https://benbusby.com/projects/whoogle-search/">Whoogle</a>
+          </li>
+          <li>
+            Translate =>
+            <a href="https://git.sr.ht/~metalune/simplytranslate_web">SimplyTranslate</a>,
+            <a href="https://github.com/TheDavidDelta/lingva-translate">LingvaTranslate</a>,
+            <a href="https://github.com/LibreTranslate/LibreTranslate">LibreTranslate</a>
+          </li>
+          <li>
+            Google Maps =>&nbsp;<a href="https://www.openstreetmap.org/">OpenStreetMap</a></li>
+          <li>
+            Send Files =>&nbsp;<a href="https://github.com/timvisee/send">Send</a></li>
+        </ul>
+      </div>
+      <div id="popup">
+        <embed type="text/html" src="./popup.html">
+      </div>
+    </div>
+    <h2>Why LibRedirect?</h2>
+    <p>Normally you watch YouTube videos through <a href="youtube.com">youtube.com</a>'s server. Problem is everything
+      you watch is tied to your Google Account. Even if you didn't use an account, you're IP address is still visible.
+      Even if you used <a href="https://www.torproject.org/">Tor</a>, you still have <a
+        href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, a programming language that can get so
+      much information about your browser and your system it's a little creepy. Just go to <a
+        href="https://deviceinfo.me">deviceinfo.me</a> or <a href="https://www.amiunique.org">amiunique.org</a> and see
+      how much information is available to know about you.<br></p>
+    <p>So, why not disabling JavaScript? Great idea! Now YouTube is broken as it requires JavaScript to function
+      ¯\_(ツ)_/¯</p>
+    <p>There's a way though to make a script that scraps data off of <a href="youtube.com">youtube.com</a> and presents
+      it in a nice simple webpage that doesn't require JavaScript. People have done this already! There's a project
+      called <a href="https://github.com/iv-org/invidious">Invidious</a> that doesn't require JavaScript for you to
+      watch YouTube videos, ex: <a
+        href=https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ>https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ</a>
+    </p>
+    <p>Those (Invidious and others) are called alternative <span class="yellow">Frontends</span>, where you really are
+      still using YouTube but with a different Interface, in our case a privacy friendly one.<br></p>
+    <p>Use an Invidious instance with JavaScript disabled + Tor, and it's almost impossible to know who watched that
+      video.</p>
+    <p>The code for Invidious is open source and you can run it on your own home server or personal computer. People did
+      this already and there's a ton of <a href="https://api.invidious.io/">Instances</a> that are basically servers
+      running Invidious in different parts of the world.</p>
+    <p>Using an instance with multiple people helps to mix your data together as it only exists from one end. It's like
+      using a shared library computer.</p>
+    <p>Using multiple instances (a random one each time) will also mix your data more as <a
+        href="https://en.wikipedia.org/wiki/Logging_(software)">request logs</a> are now stored in multiple servers
+      rather than in a single centralized one if they happen to store logs in the first place.</p>
+    <p>
+      Using a random instance and changing links each time from ex:<br>
+      <x class="mono"><a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a> =>
+        <a
+          href="https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ">https://invidious.manerakai.com/watch?v=dQw4w9WgXcQ</a>
+      </x><br> is a difficult process and best to be automated. Well, we did that!<br>
+    </p>
+    <p>LibRedirect's main functionality is to make the use of those instances easier by automating it. It makes life
+      much more easier and privacy more convenient.</p>
+    <p><a href="./download.html">Download</a> and install it.</p>
+    <p>
+      Type or click on any youtube link you want, ex: <a
+        href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a>.<br>It will
+      automatically redirect you to a random Invidious instance. You can fine tune your redirections in the settings
+      page.</p>
+    <p>Same with Twitter, Instagram, Reddit, Imgur, TikTok, Google Translate and much more!</p><br><br><br>
+  </div>
+</body>
+
 </html>
