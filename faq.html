@@ -27,9 +27,9 @@
         Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a href="./docs.html">Docs</a><a
         href="./donate.html">Donate</a>
     </div>
-    <h2 id="suggest_frontend">
+    <h3 id="suggest_frontend">
       <a href="#suggest_frontend">Suggest a Frontend</a>
-    </h2>
+    </h3>
     <p>Requirements</p>
     <ol>
       <li>Open Source</li>
@@ -90,9 +90,9 @@
           href="https://codeberg.org/LibRedirect/libredirect/issues/11#issuecomment-630922">See Discussion</a>
       </li>
     </ul>
-    <h2 id="why_forking_privacy_redirect">
+    <h3 id="why_forking_privacy_redirect">
       <a href="#why_forking_privacy_redirect">Why forking Privacy Redirect?</a>
-    </h2>
+    </h3>
     <p>
       <a href="https://github.com/SimonBrazell/privacy-redirect">Privacy Redirect</a>
       hasn't been maintained since 6/12/2021. Many instances are hard coded.
@@ -107,9 +107,9 @@
       ahead of the main project with several improvements and new features.
       The Project is independent now.
     </p>
-    <h2 id="why_all_those_permissions">
+    <h3 id="why_all_those_permissions">
       <a href="#why_all_those_permissions">Why all those permissions?</a>
-    </h2>
+    </h3>
     <p>Let's examine them one by one:</p>
     <ul>
       <li>
@@ -135,7 +135,8 @@
         <img alt="Context menu screenshot" class="menu" src="./img/context-menu.webp" />
       </li>
       <li>
-        <y>&lt;all_urls&gt;</y>: LibRedirect is dynamic and customizable. The
+        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns">all_urls</a>:
+        LibRedirect is dynamic and customizable. The
         targets e.g <a href="https://youtube.com">youtube.com</a>,
         <a href="https://twitter.com">twitter.com</a> are written in
         <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a>
@@ -146,9 +147,9 @@
         some localStorage variables.
       </li>
     </ul>
-    <h2 id="where_the_hell_are_those_instances_coming_from">
+    <h3 id="where_the_hell_are_those_instances_coming_from">
       <a href="#where_the_hell_are_those_instances_coming_from">Where the hell are those instances coming from?</a>
-    </h2>
+    </h3>
     <p>
       Almost every frontend project has a list of public instances. Examples:
       <a href="https://api.invidious.io/">Invidious' official instances list</a>,
@@ -163,22 +164,19 @@
       structure is not that of a url) and removing trailing slashes. They're
       not our responsibility: they're the projects maintainers'.
     </p>
-    <h2 id="why_not_using_a_single_reputable_instance">
+    <h3 id="why_not_using_a_single_reputable_instance">
       <a href="#why_not_using_a_single_reputable_instance">Why not using a single reputable instance?</a>
-    </h2>
+    </h3>
     <p>
       LibRedirect is just a tool. We're not here to choose for you. It's your
-      own choice. The default setting selects all instances except those using
-      Cloudflare, but you can change it yourself.
+      own choice.
     </p>
     <p>
-      We can't know which instances are reputable for you and which aren't.
-      Every person has a different point of view. LibRedirect should follow
-      your point of view, not ours.
+      By default, You add the instances you want to use. We just show you what are the instances available  
     </p>
-    <h2 id="chrome_web_store">
+    <h3 id="chrome_web_store">
       <a href="#chrome_web_store">Chrome Web Store?</a>
-    </h2>
+    </h3>
     <p>
       We can't publish it to the Chrome Web Store as it requires Manifest v3
       and we use Manifest v2. You can still
@@ -187,9 +185,9 @@
       the feature LibRedirect needs. If other browsers support Mozilla's
       policy, you might see LibRedirect in the Chrome Web Store.
     </p>
-    <h2 id="why_not_manifest_v3">
+    <h3 id="why_not_manifest_v3">
       <a href="#why_not_manifest_v3">Why not Manifest v3?</a>
-    </h2>
+    </h3>
     <p>
       Read this:
       <a
