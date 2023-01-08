@@ -61,7 +61,7 @@
       <li>
         <a href="https://www.startpage.com/" class="red">Startpage</a> - It
         doesn't require automated redirections. Just set it as your default
-        Search Engine ¯\_(ツ)_/¯. Plus, there's already an
+        Search Engine. Plus, there's already an
         <a href="https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/">extension</a>
         for it.
       </li>
@@ -129,11 +129,6 @@
         the data in your clipboard.
       </li>
       <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies">cookies</a>: To
-        apply settings across multiple instances. Note that we also use
-        localStorage. Those options are disabled by default though.
-      </li>
-      <li>
         <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>: For adding
         some buttons to the Context menu :
         <br>
@@ -149,14 +144,6 @@
           href="https://github.com/libredirect/libredirect/blob/95d30cb3af0bd09dcc9afb5ea508a60139777812/src/assets/javascripts/search.js#L321-L394">search
           Regex</a>. Furthermore, we also need to access the instances sites to inject
         some localStorage variables.
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/privacy">privacy</a>: To
-        know if the browser uses
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies#first-party_isolation">First-party
-          isolation</a>. This is important for creating cookies that the Tor Browser will
-        accept. We only read and don't modify any privacy setting.
       </li>
     </ul>
     <h2 id="where_the_hell_are_those_instances_coming_from">
@@ -208,51 +195,6 @@
       <a
         href="https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144">https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144</a>
     </p>
-    <h2 id="what_is_unify_settings">
-      <a href="#what_is_unify_settings">What is Unify Settings?</a>
-    </h2>
-    <p>
-      This feature copies locally-stored settings such as theme, language,
-      etc. across instances to make using multiple instances easier. It does
-      not support private/incognito mode.
-    </p>
-    <img alt="Unify Settings button in popup menu" width="218" height="188"
-      src="https://user-images.githubusercontent.com/12092270/196612534-74138c30-a399-479e-ad5e-440dc14b406c.png" />
-    <p>
-      To use it, visit one of your selected instances where you already have
-      settings saved. Press "Unify Settings" in the popup menu or use the
-      keyboard shortcut <code>Shift+Alt+U</code>. This will copy the settings
-      from the current instance to all your other selected instances.
-    </p>
-    <p>
-      Unify Settings may behave differently for different frontends, as it
-      depends on how each frontend saves settings. For example:
-    </p>
-    <ul>
-      <li>
-        Piped saves settings in local storage, which unifies predictably
-        across instances.
-      </li>
-      <li>
-        Libreddit saves settings as individual cookies, which unifies
-        predictably across instances.
-      </li>
-      <li>
-        Nitter saves settings as individual cookies, but only saves settings
-        you change from an instance's default. This means unifying settings
-        can behave differently depending on which instance you unify from.
-        Saving certain settings requires unifying from specific instances, and
-        some settings combinations may require unifying from multiple
-        instances.
-      </li>
-
-      <li>
-        Invidious saves its settings in a cookie with a nonstandard URL (<code>.&lt;domain&gt;</code>
-        instead of <code>&lt;domain&gt;</code>), so instances fail to
-        consistently load unified settings..
-      </li>
-    </ul>
-    <br /><br /><br />
   </div>
 </body>
 
