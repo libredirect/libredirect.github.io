@@ -18,35 +18,6 @@ body {
   justify-content: center;
 }
 
-h3.title {
-  font-size: 25px;
-  font-weight: lighter;
-}
-
-x.color-a {
-  color: orange;
-}
-
-x.color-c {
-  color: red;
-}
-
-img {
-  width: 80%;
-  object-fit: contain;
-}
-
-div.align {
-  display: block;
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: fit-content;
-  max-height: fit-content;
-  border: 5px solid #ffd65b;
-  border-radius: 17px;
-}
-
 #logo img {
   width: 120px;
 }
@@ -67,10 +38,18 @@ div.nav_bar {
 div.nav_bar a {
   font-size: 1.2em;
   text-decoration: none;
+  padding: 10px;
 }
 
-div.nav_bar a {
-  padding: 10px;
+div.align {
+  display: block;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+  max-height: fit-content;
+  border: 5px solid #ffd65b;
+  border-radius: 17px;
 }
 
 .yellow {
@@ -84,6 +63,19 @@ h2 {
 h2 a {
   color: white;
   text-decoration: none;
+}
+
+h3.title {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+x.color-a {
+  color: orange;
+}
+
+x.color-c {
+  color: red;
 }
 
 embed {
@@ -130,21 +122,6 @@ li {
   margin: 10px 0 20px 0;
 }
 
-.unify {
-  font-size: 18px;
-  line-height: 16pt;
-}
-
-.menu {
-  max-width: fit-content;
-  max-height: fit-content;
-}
-
-.incognito {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 ul.clear {
   list-style-type: none;
   margin: 0;
@@ -174,6 +151,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+img {
+  width: 80%;
+  object-fit: contain;
 }
 
 a.badge img {
