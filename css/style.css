@@ -18,9 +18,33 @@ body {
   justify-content: center;
 }
 
+h3.title {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+x.color-a {
+  color: orange;
+}
+
+x.color-c {
+  color: red;
+}
+
 img {
   width: 80%;
   object-fit: contain;
+}
+
+div.align {
+  display: block;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+  max-height: fit-content;
+  border: 5px solid #ffd65b;
+  border-radius: 17px;
 }
 
 #logo img {
@@ -57,7 +81,7 @@ h2 {
   margin-bottom: 0;
 }
 
-h2 a h3 {
+h2 a {
   color: white;
   text-decoration: none;
 }
