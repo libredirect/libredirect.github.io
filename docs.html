@@ -52,7 +52,7 @@
     <p>This applies for every frontend. You can use the shortcut for easier accessibility.</p>
     <p>Note that this will work only for links not Embeds.</p>
     <h3 id="exceptions"><a href="#exceptions">Understanding Exceptions</a></h3>
-    <div class="align"><img src="img/docs/exceptions.webp"></div>
+    <div><img class="align" src="img/docs/exceptions.webp"></div>
     <p>Exceptions as the name says for itself will exclude certain sites from being redirected.
       When you add a site to the exceptions list it will not redirect as it is excluded from redirection.</p>
     <p>This exceptions is in short a manual allowlist not a <b>blocklist</b></p>
@@ -62,14 +62,16 @@
     </p>
     <p>
       <x class="color-a">authenticate</x> means that the instances require authentication to visit and access data in
-      them
+      them.
     </p>
     <p>
       <x class="color-c">Cloudflare</x> indicates that the instances use Cloudflare as their CDN which isn't
-      recommeneded to use as Cloudflare can
-      decrypt data between you and server to compress it and send them faster. This could also potentially means that
+      recommended.
+      
+      While using Cloudflare, they can
+      decrypt data between you and server to compress it and send them faster, literally what a CDN does. This could also potentially means that
       Cloudflare
-      can see data in Plain text even though the site uses HTTPS
+      can see data in Plain text even though the site uses HTTPS. So, Choose instances carefully.
     </p>
     <h3 id="search_engine_chromium"><a href="#search_engine_chromium">Setting LibRedirect as a Search Engine in
         Chromium</a></h3>
@@ -77,7 +79,7 @@
       click <span class="yellow">Add</span>. Then type:<br><strong>Search engine:</strong>
       LibRedirect<br><strong>Shortcut:</strong> libredirect<br><strong>URL with %s in place of query:</strong>
       http://search.libredirect.invalid/?q=%s</p>
-    <div class="align"><img class="align" src="img/docs/chromium_search_engine.webp" alt=""></div><br><br><br>
+    <div><img class="align" class="align" src="img/docs/chromium_search_engine.webp" alt=""></div><br><br><br>
   </div>
 </body>
 
