@@ -11,8 +11,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="LibRedirect - privacy-friendly Redirector" />
   <meta property="og:site_name" content="libredirect.github.io" />
-  <meta property="og:description"
-    content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends" />
+  <meta property="og:description" content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends" />
   <title>FAQ</title>
 </head>
 
@@ -24,8 +23,7 @@
     </div>
     <div class="nav_bar">
       <a href="./index.html">Home</a><a href="./download.html">Download</a><a href="./source_code.html">Source
-        Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a href="./docs.html">Docs</a><a
-        href="./donate.html">Donate</a>
+        Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a href="./docs.html">Docs</a><a href="./donate.html">Donate</a>
     </div>
     <h2>FAQ</h2>
     <h3 id="suggest_frontend">
@@ -50,7 +48,7 @@
         <a href="https://github.com/spikecodes/libreddit" class="green">Libreddit</a>
       </li>
       <li>
-        <a href="https://git.sr.ht/~metalune/simplytranslate_web" class="green">SimplyTranslate</a>
+        <a href="https://simple-web.org/projects/simplytranslate.html" class="green">SimplyTranslate</a>
       </li>
     </ul>
     <p>Bad Examples</p>
@@ -68,7 +66,7 @@
       </li>
       <li>
         <a href="https://old.reddit.com/" class="red">Old Reddit</a> - It
-        attempts to track/fingerprint you.
+        attempts to track/fingerprint you. Plus, there's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect">extension</a> for it.
       </li>
       <li>
         <a href="https://pinafore.social/" class="red">Pinafore</a> - It's a
@@ -79,16 +77,15 @@
         <a href="https://playsoju.netlify.app/" class="red">Soju</a> - It's
         just a website that gives you samples of Spotify songs, not a
         frontend. If you want to use it, just visit their
-        <a href="https://playsoju.netlify.app/">website</a> and paste the
+        website and paste the
         spotify link you want to get a sample of.
       </li>
       <li>
-        <a href="https://imginn.com/" class="red">Imginn</a> - There are many
-        trackers on the website, not private at all.
+        <a href="https://imginn.com/" class="red">Imginn</a> - Has so many
+        trackers. Wasn't meant to be an alternative private frontend in the first place.
       </li>
       <li>
-        Don't suggest frontends such as PornInvidious to be added in Libredirect. <a
-          href="https://codeberg.org/LibRedirect/libredirect/issues/11#issuecomment-630922">See Discussion</a>
+        PornInvidious: <a href="https://codeberg.org/LibRedirect/libredirect/issues/11#issuecomment-630922">See Discussion</a>
       </li>
     </ul>
     <h3 id="why_forking_privacy_redirect">
@@ -104,7 +101,7 @@
     </p>
 
     <p>
-      Disclaimer : Even though we forked from Privacy Redirect. Libredirect is
+      Disclaimer: Even though we forked from Privacy Redirect, Libredirect is
       ahead of the main project with several improvements and new features.
       The Project is independent now.
     </p>
@@ -124,14 +121,14 @@
         save LibRedirect's settings permanently.
       </li>
       <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText">Clipboard.writeText</a>
-        : To write the original link to the clipboard while using Copy Raw.
-        This permission is used to only write data. LibRedirect does not read
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText">Clipboard.writeText</a>:
+        To write the original link to the clipboard while using Copy Raw.
+        This permission is used to only write data. LibRedirect does NOT read
         the data in your clipboard.
       </li>
       <li>
         <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>: For adding
-        some buttons to the Context menu :
+        some buttons to the Context menues:
         <br>
         <br>
         <div>
@@ -145,8 +142,7 @@
         <a href="https://twitter.com">twitter.com</a> are written in
         <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a>
         and are too complicated to be hard-coded in the manifest. Ex:
-        <a
-          href="https://github.com/libredirect/libredirect/blob/95d30cb3af0bd09dcc9afb5ea508a60139777812/src/assets/javascripts/search.js#L321-L394">search
+        <a href="https://github.com/libredirect/libredirect/blob/95d30cb3af0bd09dcc9afb5ea508a60139777812/src/assets/javascripts/search.js#L321-L394">search
           Regex</a>. Furthermore, we also need to access the instances sites to inject
         some localStorage variables.
       </li>
@@ -157,26 +153,13 @@
     <p>
       Almost every frontend project has a list of public instances. Examples:
       <a href="https://api.invidious.io/">Invidious' official instances list</a>,
-      <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. For frontends that
-      don't have an instance list, we use our own, which
-      you can find under
-      <a href="https://codeberg.org/LibRedirect/libredirect/src/branch/master/src/instances">src/instances</a>. We fetch
+      <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch
       those lists using an automated
-      <a href="https://github.com/libredirect/libredirect/blob/master/src/instances/get_instances.py">python script</a>.
+      <a href="https://github.com/libredirect/instances">python script</a>.
       This script gets triggered every 3 days. We don't intercept nor
       modify the lists outside of removing urls that are not valid (the
-      structure is not that of a url) and removing trailing slashes. They're
-      not our responsibility: they're the projects maintainers'.
-    </p>
-    <h3 id="why_not_using_a_single_reputable_instance">
-      <a href="#why_not_using_a_single_reputable_instance">Why not using a single reputable instance?</a>
-    </h3>
-    <p>
-      LibRedirect is just a tool. We're not here to choose for you. It's your
-      own choice.
-    </p>
-    <p>
-      By default, You add the instances you want to use. We just show you what are the instances available
+      structure is not that of a url). They're
+      not our responsibility, they're the projects maintainers'.
     </p>
     <h3 id="chrome_web_store">
       <a href="#chrome_web_store">Chrome Web Store?</a>
@@ -194,8 +177,7 @@
     </h3>
     <p>
       Read this:
-      <a
-        href="https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144">https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144</a>
+      <a href="https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144">https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144</a>
     </p>
   </div>
 </body>

@@ -47,8 +47,8 @@ img.align {
   margin: auto;
   max-width: fit-content;
   max-height: fit-content;
-  border: 2px solid #b99d3f;
-  border-radius: 17px;
+  border: 2px solid white;
+  border-radius: 2px;
 }
 
 .yellow {
@@ -152,7 +152,7 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
+img, video {
   width: 80%;
   object-fit: contain;
 }
