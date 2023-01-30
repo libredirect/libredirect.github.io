@@ -12,14 +12,7 @@ body {
 
 @font-face {
   font-family: "Inter";
-  src: url("Inter-VariableFont_slnt,wght.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Vazirmatn";
-  src: url("Vazirmatn-VariableFont_wght.ttf");
+  src: url("Inter.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -117,6 +110,9 @@ section.links div {
 }
 
 a {
+  color: var(--text);
+}
+a:hover{ 
   color: var(--active);
 }
 
