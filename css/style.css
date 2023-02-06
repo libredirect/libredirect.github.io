@@ -134,6 +134,10 @@ a {
   color: #ffd65b;
 }
 
+a.fedi {
+  color: #121212;
+}
+
 .red {
   color: rgb(255, 43, 43);
 }
@@ -154,7 +158,8 @@ a:hover {
   text-decoration: underline;
 }
 
-img, video {
+img,
+video {
   width: 80%;
   object-fit: contain;
 }
