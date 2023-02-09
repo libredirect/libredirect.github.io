@@ -1,1 +1,4 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/install_chromium_load_unpacked.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/install_chromium.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/preferred_instance.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/chromium_default_seach_engine.mp4 filter=lfs diff=lfs merge=lfs -text
