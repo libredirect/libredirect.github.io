@@ -1,6 +1,6 @@
 
 ---
-# Libredirect Official Site
+# LibRedirect Official Site
 
 - No Javascript, Only HTML & CSS
 - No External Dependencies

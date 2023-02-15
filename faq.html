@@ -101,7 +101,7 @@
     </p>
 
     <p>
-      Disclaimer: Even though we forked from Privacy Redirect, Libredirect is
+      Disclaimer: Even though we forked from Privacy Redirect, LibRedirect is
       ahead of the main project with several improvements and new features.
       LibRedirect is independent now.
     </p>
@@ -141,9 +141,8 @@
         targets e.g <a href="https://youtube.com">youtube.com</a>,
         <a href="https://twitter.com">twitter.com</a> are written in
         <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a>
-        and are too complicated to be hard-coded in the manifest. Ex:
-        <a href="https://github.com/libredirect/libredirect/blob/95d30cb3af0bd09dcc9afb5ea508a60139777812/src/assets/javascripts/search.js#L321-L394">search
-          Regex</a>. Furthermore, we also need to access the instances sites to inject
+        and are <a href="https://github.com/libredirect/libredirect/blob/604a56c5142fa433903500153940837fc77b6429/src/assets/javascripts/services.js#L46-L550">too complicated to be hard-coded</a> in the manifest. Ex:
+        . Furthermore, we also need to access the instances sites to inject
         some localStorage variables.
       </li>
     </ul>
@@ -167,7 +166,7 @@
     <p>
       We can't publish it to the Chrome Web Store as it requires Manifest v3
       and we use Manifest v2. You can still
-      <a href="https://github.com/libredirect/libredirect/blob/master/chromium.md">install it manually</a>. We are
+      <a href="https://libredirect.github.io/download_chromium.html">install it manually</a>. We are
       planning to adopt Manifest v3 in Firefox as they will support
       the feature LibRedirect needs. If other browsers support Mozilla's
       policy, you might see LibRedirect in the Chrome Web Store.
