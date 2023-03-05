@@ -47,8 +47,15 @@ img.align {
   margin: auto;
   max-width: fit-content;
   max-height: fit-content;
-  border: 2px solid white;
-  border-radius: 2px;
+  border: 2px solid #ffd65b;
+  border-radius: 10px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #19813b ;
+  border-radius: 10px;
 }
 
 .yellow {
