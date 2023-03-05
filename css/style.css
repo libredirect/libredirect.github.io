@@ -82,6 +82,11 @@ span.color-c {
   color: red;
 }
 
+a.img badge_medium {
+  width: 113;
+  height: 40;
+}
+
 embed {
   outline: 1px solid rgb(73, 73, 73);
   border-radius: 10px;
