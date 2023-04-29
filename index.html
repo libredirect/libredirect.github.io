@@ -11,7 +11,8 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="LibRedirect - privacy-friendly Redirector">
   <meta property="og:site_name" content="libredirect.github.io">
-  <meta property="og:description" content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends">
+  <meta property="og:description"
+    content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends">
   <title>LibRedirect</title>
 </head>
 
@@ -20,7 +21,15 @@
     <div id="logo"> <img src="img/icon.svg" width="160" height="160" alt="LibRedirect icon">
       <h1>LibRedirect</h1>
     </div>
-    <div class="nav_bar"> <a href="./index.html">Home</a><a href="./download.html">Download</a><a href="./source_code.html">Source Code</a><a href="./contact.html">Contact</a><a href="./faq.html">FAQ</a><a href="./docs.html">Docs</a><a href="./donate.html">Donate</a></div>
+    <div class="nav_bar">
+      <a href="./index.html" style="font-weight: bold;">Home</a>
+      <a href="./download.html">Download</a>
+      <a href="./source_code.html">Source Code</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./docs.html">Docs</a>
+      <a href="./donate.html">Donate</a>
+    </div>
     <h3 class="title">A web extension that redirects YouTube, Twitter, TikTok, and other websites to alternative
       privacy friendly frontends</h3>
     <div id="description">
@@ -53,7 +62,8 @@
           <li>
             Imgur <span>&#8594;</span>&nbsp;<a href="https://codeberg.org/video-prize-ranch/rimgo">Rimgo</a></li>
           <li>
-            Medium <span>&#8594;</span> &nbsp;<a href="https://sr.ht/~edwardloveall/Scribe/">Scribe</a>, <a href="https://github.com/realaravinth/libmedium">LibMedium</a>
+            Medium <span>&#8594;</span> &nbsp;<a href="https://sr.ht/~edwardloveall/Scribe/">Scribe</a>, <a
+              href="https://github.com/realaravinth/libmedium">LibMedium</a>
           </li>
           <li>
             Quora <span>&#8594;</span>&nbsp;<a href="https://github.com/zyachel/quetre">Quetre</a>
@@ -108,7 +118,8 @@
             <a href="https://codeberg.org/zortazert/rural-dictionary">Rural Dictionary</a>
           </li>
           <li>
-            StackOverflow <span>&#8594;</span>&nbsp;<a href="https://github.com/httpjamesm/AnonymousOverflow">AnonymousOverflow</a>
+            StackOverflow <span>&#8594;</span>&nbsp;<a
+              href="https://github.com/httpjamesm/AnonymousOverflow">AnonymousOverflow</a>
           </li>
           <li>
             Goodreads <span>&#8594;</span>&nbsp;<a href="https://github.com/nesaku/BiblioReads">BiblioReads</a>
@@ -142,12 +153,14 @@
         <embed type="text/html" src="./popup.html">
       </div>
     </div>
-    <hr>
+    <!-- <hr>
     <h3 id="why_libredirect"><a href="#why_libredirect">Why LibRedirect?</a></h3>
     <p>Normally you watch YouTube videos through <a>youtube.com</a>'s server. Problem is everything
       you watch is tied to your Google Account. Even if you didn't use an account, your IP address is still visible.
-      Even if you used <a href="https://www.torproject.org/">Tor</a>, you still have <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, a programming language that can get so
-      much information about your browser and your system it's a little creepy. Just go to <a href="https://deviceinfo.me">deviceinfo.me</a> or <a href="https://www.amiunique.org">amiunique.org</a> and see
+      Even if you used <a href="https://www.torproject.org/">Tor</a>, you still have <a
+        href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, a programming language that can get so
+      much information about your browser and your system it's a little creepy. Just go to <a
+        href="https://deviceinfo.me">deviceinfo.me</a> or <a href="https://www.amiunique.org">amiunique.org</a> and see
       how much information is available to know about you.<br></p>
     <p>So, why not disabling JavaScript? Great idea! Now YouTube is broken as it requires JavaScript to function
       ¯\_(ツ)_/¯</p>
@@ -158,24 +171,15 @@
     </p>
     <p>Those (Invidious and others) are called alternative <span class="yellow">Frontends</span>, where you really are
       still using YouTube but with a different Interface, in our case a privacy friendly one.<br></p>
-    <p>Use an Invidious instance with JavaScript disabled + Tor, and it's almost impossible to know who watched that
-      video.</p>
-    <p>The code for Invidious is open source and you can run it on your own home server or personal computer. People do
-      this already and there's a ton of <a href="https://api.invidious.io/">Instances</a> that are basically servers
-      running Invidious in different parts of the world.</p>
-    <p>Using an instance with multiple people helps to mix your data together as it only exists from one end. It's like
-      using a shared library computer.</p>
-    <p>Using multiple instances (a random one each time) will also mix your data more as <a href="https://en.wikipedia.org/wiki/Logging_(software)">request logs</a> are now stored in multiple servers
-      rather than in a single centralized one if they happen to store logs in the first place.</p>
     <p>
-      Using a random instance and changing links each time from ex:<br>
+      Using a frontend and changing links each time from ex:<br>
       <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a>
       <span>&#8594;</span>
       <a href="https://yewtu.be/watch?v=dQw4w9WgXcQ">https://yewtu.be/watch?v=dQw4w9WgXcQ</a>
-      <br> is a difficult process and best to be automated. Well, we did that!<br>
+      <br> is a difficult process and best to be automated, so we did that!<br>
     </p>
-    <p>LibRedirect's main functionality is to make the use of those instances easier by automating it. It makes life
-      much more easier and privacy more convenient.</p>
+    <p>LibRedirect's main functionality is to make the use of those frontends easier by automating it. It makes life
+      much easier and privacy more convenient.</p> -->
     <a class="fedi" rel="me" href="https://fosstodon.org/@libredirect">Mastodon</a>
     <br><br>
   </div>
