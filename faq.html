@@ -59,29 +59,26 @@
     <p>Bad Examples</p>
     <ul>
       <li>
-        <a href="https://pixiv.moe/" class="red">PixivMoe</a> - It wasn't
-        meant to be an alternative private frontend in the first place
+        <a href="https://pixiv.moe/" class="red">PixivMoe</a>
+        - Wasn't meant to be an alternative private frontend in the first place
       </li>
       <li>
-        <a href="https://www.startpage.com/" class="red">Startpage</a> - It
-        doesn't require automated redirections. Just set it as your default
-        Search Engine. Plus, there's already an
-        <a href="https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/">extension</a>
+        <a href="https://www.startpage.com/" class="red">Startpage</a>
+        - There's already an <a
+          href="https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/">extension</a> for it.
+      </li>
+      <li>
+        <a href="https://old.reddit.com/" class="red">Old Reddit</a>
+        - There's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect">extension</a>
         for it.
       </li>
       <li>
-        <a href="https://old.reddit.com/" class="red">Old Reddit</a> - It
-        attempts to track/fingerprint you. Plus, there's already an <a
-          href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect">extension</a> for it.
-      </li>
-      <li>
-        <a href="https://pinafore.social/" class="red">Pinafore</a> - It's a
-        full featured web app for
-        <a href="https://joinmastodon.org/">Mastodon</a>, not a frontend
+        <a href="https://pinafore.social/" class="red">Pinafore</a>
+        - It's a full featured web app for <a href="https://joinmastodon.org/">Mastodon</a>, not a frontend
       </li>
       <li>
         <a href="https://playsoju.netlify.app/" class="red">Soju</a> - It's
-        just a website that gives you samples of Spotify songs, not a
+        a website that gives you samples of Spotify songs, not a
         frontend. If you want to use it, just visit their
         website and paste the
         spotify link you want to get a sample of.
@@ -134,8 +131,8 @@
         the data in your clipboard.
       </li>
       <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>: For adding
-        some buttons to the Context menues:
+        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus">menus</a>:
+        To add LibRedirect buttons to the Context Menus:
         <br>
         <br>
         <div>
@@ -144,16 +141,16 @@
         </div>
       </li>
       <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks">bookmarks</a>
+        (optional):
+        To add the same Context Menus to Bookmarks too.
+      </li>
+      <li>
         <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns">all_urls</a>:
-        LibRedirect is dynamic and customizable. The
-        targets e.g <a href="https://youtube.com">youtube.com</a>,
-        <a href="https://twitter.com">twitter.com</a> are written in
-        <a href="https://en.wikipedia.org/wiki/Regular_expression">Regex</a>
-        and are <a
-          href="https://github.com/libredirect/libredirect/blob/604a56c5142fa433903500153940837fc77b6429/src/assets/javascripts/services.js#L46-L550">too
-          complicated to be hard-coded</a> in the manifest. Ex:
-        . Furthermore, we also need to access the instances sites to inject
-        some localStorage variables.
+        The targets e.g <a href="https://youtube.com">youtube.com</a>,
+        <a href="https://twitter.com">twitter.com</a> can be static,
+        but the Switch Instance and Copy Raw buttons require access
+        to the instances' urls which are custom to each user, and by so can't be static.
       </li>
     </ul>
     <h3 id="where_the_hell_are_those_instances_coming_from">
@@ -165,29 +162,22 @@
       <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch
       those lists using an automated
       <a href="https://github.com/libredirect/instances">python script</a>.
-      This script gets triggered every 3 days. We don't intercept nor
+      This script gets triggered every single day. We don't intercept nor
       modify the lists outside of removing urls that are not valid (the
-      structure is not that of a url). They're
-      not our responsibility, they're the projects maintainers'.
+      structure is not that of a url). They are
+      not our responsibility, they are the projects maintainers'.
     </p>
     <h3 id="chrome_web_store">
       <a href="#chrome_web_store">Chrome Web Store?</a>
     </h3>
     <p>
       We can't publish it to the Chrome Web Store as it requires Manifest v3
-      and we use Manifest v2. You can still
-      <a href="https://libredirect.github.io/download_chromium.html">install it manually</a>. We are
-      planning to adopt Manifest v3 in Firefox as they will support
-      the feature LibRedirect needs. If other browsers support Mozilla's
-      policy, you might see LibRedirect in the Chrome Web Store.
-    </p>
-    <h3 id="why_not_manifest_v3">
-      <a href="#why_not_manifest_v3">Why not Manifest v3?</a>
-    </h3>
-    <p>
-      Read this:
-      <a
-        href="https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144">https://github.com/libredirect/libredirect/issues/45#issuecomment-1059010144</a>
+      which removed essential features LibRedirect needs.
+      You can still <a href="https://libredirect.github.io/download_chromium.html">install it manually</a> though.
+      <br>
+      We are planning to adopt Manifest v3 in Firefox though as they will support
+      the features LibRedirect needs. If other browsers adopt Mozilla's
+      Manifest, then you might see LibRedirect in the Chrome Web Store.
     </p>
   </div>
   <br>
