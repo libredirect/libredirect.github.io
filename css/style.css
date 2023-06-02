@@ -30,7 +30,7 @@ body {
 div.nav_bar {
   margin: 0 auto;
   margin-top: 20px;
-  width: 660px;
+  width: 720px;
   display: flex;
   justify-content: space-between;
 }
