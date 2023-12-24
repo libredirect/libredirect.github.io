@@ -32,6 +32,32 @@
       <a href="./donate.html">Donate</a>
     </div>
     <h2>Frequently Asked Questions</h2>
+    <h3 id="why_libredirect"><a href="#why_libredirect">Why LibRedirect?</a></h3>
+    <p>Normally you watch YouTube videos through <a>youtube.com</a>'s server. Problem is everything
+      you watch is tied to your Google Account. Even if you don't use an account, your IP address is still visible.
+      Even if you used <a href="https://www.torproject.org/">Tor</a>, you still have <a
+        href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, a programming language that can get so
+      much information about your browser and your system which is a little creepy. Just go to <a
+        href="https://deviceinfo.me">deviceinfo.me</a> or <a href="https://www.amiunique.org">amiunique.org</a> and see
+      how much information is available to know about you.<br></p>
+    <p>So, why not disabling JavaScript? Great idea! Now YouTube is broken as it requires JavaScript to function
+      ¯\_(ツ)_/¯</p>
+    <p>There's a way though to make a script that scraps data off of <a>youtube.com</a> and presents
+      it in a nice simple webpage that doesn't require JavaScript. People have done this already! There's a project
+      called <a href="https://github.com/iv-org/invidious">Invidious</a> that doesn't require JavaScript for you to
+      watch YouTube videos, ex: <a href=https://yewtu.be/watch?v=dQw4w9WgXcQ>https://yewtu.be/watch?v=dQw4w9WgXcQ</a>
+    </p>
+    <p>Those (Invidious and others) are called alternative <span class="yellow">Frontends</span>, where you really are
+      still using YouTube but with a different Interface, in our case a privacy friendly one.<br></p>
+    <p>
+      Using a frontend and changing links each time from ex:<br>
+      <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a>
+      <span>&#8594;</span>
+      <a href="https://yewtu.be/watch?v=dQw4w9WgXcQ">https://yewtu.be/watch?v=dQw4w9WgXcQ</a>
+      <br> is a difficult process and best to be automated, so we did that!<br>
+    </p>
+    <p>LibRedirect's main functionality is to make the use of those frontends easier by automating it. It makes life
+      much easier and privacy more convenient.</p>
     <h3 id="suggest_frontend">
       <a href="#suggest_frontend">Suggest a Frontend</a>
     </h3>
@@ -166,6 +192,12 @@
       modify the lists outside of removing urls that are not valid (the
       structure is not that of a url). They are
       not our responsibility, they are the projects maintainers'.
+    <p>Hence, If you are not comfortable with certain instances policies or found malicious instances then report it to
+      the
+      project maintainers to remove it from theirs. Then we will update the instances manually again to make sure those
+      are removed which is only when you intimate us via our Matrix room or by Mastodon if the case is of high severity
+      which will affect our users, if not please wait until the script fetches the instance automatically and remove
+      them.</p>
     </p>
     <h3 id="chrome_web_store">
       <a href="#chrome_web_store">Chrome Web Store ?</a>
@@ -174,7 +206,8 @@
       We can't publish it to the Chrome Web Store as it requires Manifest v3
       which removed essential features LibRedirect needs.
       You can still <a href="https://libredirect.github.io/download_chromium.html">install it manually</a> though.
-      <br>
+    </p>
+    <p>
       We are planning to adopt Manifest v3 in Firefox though as they will support
       the features LibRedirect needs. If other browsers adopt Mozilla's
       Manifest, then you might see LibRedirect in the Chrome Web Store.
@@ -202,6 +235,11 @@
         <a href="https://github.com/you-apps/TranslateYou">TranslateYou</a>,
         <a href="https://manerakai.github.io/simplytranslate_mobile/">SimplyTranslate Mobile</a>
       </li>
+      <hr>
+      <p>As of now, you can now install the extension in Firefox for Android like in Desktop. Just visit the <a
+          href="https://addons.mozilla.org/firefox/addon/libredirect/">Mozilla addons page</a> and switch to Desktop
+        view to install the extension. </p>
+      <p>Even though, note that it is within Firefox browser only not for Android as a Whole.</p>
     </ul>
   </div>
   <br>
