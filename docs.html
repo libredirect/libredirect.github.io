@@ -9,10 +9,10 @@
   <link rel="icon" type="image/x-icon" href="img/icon.svg">
   <link rel="canonical" href="https://libredirect.github.io">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LibRedirect - privacy-friendly Redirector">
+  <meta property="og:title" content="LibRedirect – Privacy-friendly Redirector">
   <meta property="og:site_name" content="libredirect.github.io">
   <meta property="og:description"
-    content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends">
+    content="A web extension that redirects YouTube, Twitter, Instagram, etc. requests to alternative privacy-friendly frontends">
   <title>Docs</title>
   <meta name="referrer" content="same-origin">
   <meta http-equiv="Content-Security-Policy" content=" default-src 'none' base-uri 'self' script-src 'none' form-action 'none' frame-ancestors 'none' ">
@@ -33,64 +33,67 @@
       <a href="./donate.html">Donate</a>
     </div>
     <h2>Documentation</h2>
-    <h3 id="Keyboard_Shortcuts"><a href="#Keyboard_Shortcuts">Keyboard Shortcuts</a></h3>
-    <p>LibRedirect offers the following Keyboard shortcuts for easier access</p>
+    <h3 id="Keyboard_Shortcuts"><a href="#Keyboard_Shortcuts">Keyboard shortcuts</a></h3>
+    <p>LibRedirect offers the following keyboard shortcuts for easier access:</p>
     <ul>
       <li>
-        <code>Shift+Alt+L</code> - To Switch the instance you are currently in
+        <code>Shift+Alt+L</code> – To switch to a different instance from the one you're currently in.
       </li>
       <li>
-        <code>Shift+Alt+C</code> - Copies the original link. Ex: Copies the original Twitter link when you are in
-        Nitter website
+        <code>Shift+Alt+C</code> – Copies the original link – e.g. copies the original Twitter link 
+        when you're using <a href="https://github.com/zedeus/nitter">Nitter</a>.
       </li>
       <li>
-        <code>Shift+Alt+O</code> - Redirects to original Site from the frontend
+        <code>Shift+Alt+O</code> – Redirects to the original site from the frontend.
       </li>
       <li>
-        <code>Shift+Alt+R</code> - Redirects from Original Site to the frontend.
+        <code>Shift+Alt+R</code> – Redirects to the frontend from the original site.
       </li>
     </ul>
     <p>Some shortcuts may or may not work in certain browsers such as Microsoft Edge.</p>
-    <h3 id="preferred"><a href="#preferred">Preferred Instances</a></h3>
-    <p>To go from a current instance you are using to your preferred or favorite instance, it is explained as follows.
-      For example, assume that you receive a piped link shared to you which is of the instance <a
-        href="https://piped.mha.fi">piped.mha.fi</a> but you want to use your favorite instance that is <a
-        href="https://piped.video">piped.video</a>, The Official instance. It will be a hassle to change the particular
-      part of domain if there is a lot of similar links which may become a big discomfort for you.
+
+    <h3 id="preferred"><a href="#preferred">Preferred instances</a></h3>
+    <p>To go from the current instance you're using to your preferred or favourite instance, it is explained as follows.
+      For example, assume someone shares with you a <a href="https://github.com/TeamPiped/Piped">Piped</a> link for the instance 
+      <a href="https://piped.mha.fi">piped.mha.fi</a>, but you want to use your favourite instance, 
+      <a href="https://piped.video">piped.video</a>, the official instance. It would be a hassle to change the domain manually,
+      especially if you've been sent multiple links.
     </p>
-    <p>To avoid that hassle you can redirect to your favorite instance within few clicks, just two !!, just open the
-      popup menu and click the reload button near the frontend. In this case, YouTube. Voila !, you have reached your
+    <p>To avoid that hassle, you can redirect to your favourite instance with just two clicks! Just open the
+      popup menu and click the reload button near the frontend (in this case, YouTube). Voila! You have reached your
       destination.</p>
 
-    <p> Below is a small demo of this feature. Note that, Switching to favorite instance by clicking the reload button
-      works depsite the redirection for the frontend is turned off or on.</p>
-
+    <p>Below is a small demo of this feature. Please note that switching to your favourite instance by clicking the reload button
+      works regardless of whether redirection for that frontend is turned off or on.</p>
     <video src="./vids/preferred_instances.webm" type="video/webm" controls></video>
 
-    <p><b>Note : </b> Some frontends may not have this feature. But the popular and mostly used ones do have them. We
-      will try to expand the functionality if it is feasible.</p>
+    <p><strong>Note:</strong> Some frontends may not have this feature, but the most popular ones do. We
+      will try to expand this functionality if feasible.</p>
+
     <h3 id="exceptions"><a href="#exceptions">Exceptions</a></h3>
     <div><img class="align" src="img/docs/exceptions.webp" alt="Image of Exceptions settings"></div>
-    <p>Exceptions as the name says for itself will exclude certain sites from being redirected.
-      When you add a site to the exceptions list it will not redirect as it is excluded from redirection.</p>
-    <p>This exceptions list is an allowlist <b>NOT</b> a blocklist.</p>
-    <h3 id="instances"><a href="#instances">Defined Instances</a></h3>
-    <p> You should be able to see instances such as <span class="color-c">
-        Cloudflare</span>
-    </p>
+    <p>Exceptions will exclude certain sites from being redirected.
+      When you add a site to the exceptions list, it will not redirect as it is excluded from redirection.</p>
+    <p>This exceptions list is an allowlist, <em>not</em> a blocklist.</p>
+
+    <h3 id="instances"><a href="#instances">Cloudflare</a></h3>
+    <p>You might see some instances marked with <span class="color-c">Cloudflare</span>.</p>
     <p>
-      <span class="color-c">Cloudflare:</span> indicates that an instances is using Cloudflare as it's CDN.
-      Cloudflare basically decrypts the data between you and the instance to compress it to send it faster, a <a
-        href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN</a> basically.
-      In other words, Cloudflare can see your data in Plain text even with HTTPS. So, use these instances carefully.
+      <span class="color-c">Cloudflare</span> indicates that an instance is using Cloudflare as its CDN.
+      Cloudflare basically decrypts the data between you and the instance to compress it and send it faster;
+      in other words, Cloudflare can see your data in plain text, even with HTTPS, so use these instances carefully.
     </p>
-    <h3 id="search_engine_chromium"><a href="#search_engine_chromium">Setting LibRedirect as a Search Engine in
-        Chromium</a></h3>
-    <p>Type in your address bar: <span class="yellow">chrome://settings/searchEngines</span>. Then on <span
-        class="yellow">Site search</span>
-      click <span class="yellow">Add</span>. Then type:<br><strong>Search engine:</strong>
-      LibRedirect<br><strong>Shortcut:</strong> libredirect<br><strong>URL with %s in place of query:</strong>
-      http://search.libredirect.invalid/?q=%s</p>
+
+    <h3 id="search_engine_chromium"><a href="#search_engine_chromium">Setting LibRedirect as a search engine in
+      Chromium</a></h3>
+    <p>Type in your address bar: <span class="yellow">chrome://settings/searchEngines</span>. Under 
+      <span class="yellow">Site search</span>,
+      click <span class="yellow">Add</span> and type:
+      <br>
+      <strong>Search engine:</strong> LibRedirect<br>
+      <strong>Shortcut:</strong> libredirect<br>
+      <strong>URL with %s in place of query:</strong> http://search.libredirect.invalid/?q=%s
+    </p>
     <video src="./vids/chrome_default_seach_engine.webm" type="video/webm" controls></video>
     <br><br><br>
   </div>

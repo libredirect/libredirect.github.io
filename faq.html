@@ -9,10 +9,10 @@
   <link rel="icon" type="image/x-icon" href="img/icon.svg">
   <link rel="canonical" href="https://libredirect.github.io">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LibRedirect - privacy-friendly Redirector">
+  <meta property="og:title" content="LibRedirect – Privacy-friendly Redirector">
   <meta property="og:site_name" content="libredirect.github.io">
   <meta property="og:description"
-    content="A web extension that redirects YouTube, Twitter, Instagram... requests to alternative privacy friendly frontends and backends">
+    content="A web extension that redirects YouTube, Twitter, Instagram, etc. requests to alternative privacy-friendly frontends">
   <title>FAQ</title>
   <meta name="referrer" content="same-origin">
   <meta http-equiv="Content-Security-Policy" content=" default-src 'none' base-uri 'self' script-src 'none' form-action 'none' frame-ancestors 'none' ">
@@ -35,41 +35,40 @@
     </div>
     <h2>Frequently Asked Questions</h2>
     <h3 id="why_libredirect"><a href="#why_libredirect">Why LibRedirect?</a></h3>
-    <p>Normally you watch YouTube videos through <a>youtube.com</a>'s server. Problem is everything
-      you watch is tied to your Google Account. Even if you don't use an account, your IP address is still visible.
-      Even if you used <a href="https://www.torproject.org/">Tor</a>, you still have <a
-        href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, a programming language that can get so
-      much information about your browser and your system which is a little creepy. Just go to <a
-        href="https://deviceinfo.me">deviceinfo.me</a> or <a href="https://www.amiunique.org">amiunique.org</a> and see
-      how much information is available to know about you.<br></p>
-    <p>So, why not disabling JavaScript? Great idea! Now YouTube is broken as it requires JavaScript to function
+    <p>Normally, you would watch YouTube videos through <a href="https://www.youtube.com">youtube.com</a>; problem is, everything
+      you watch is tied to your Google Account. Even if you don't use an account, your IP address is still visible to their server.
+      Even if you use <a href="https://www.torproject.org/">Tor</a>, you still have <a
+        href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> enabled, which can gather all sorts of creepy
+      information about your browser and system – just go to <a href="https://deviceinfo.me">deviceinfo.me</a> 
+      or <a href="https://www.amiunique.org">amiunique.org</a> and see for yourself!<br></p>
+    <p>So, why not disable JavaScript? Great idea! Now YouTube is broken, as it requires JavaScript to function
       ¯\_(ツ)_/¯</p>
-    <p>There's a way though to make a script that scraps data off of <a>youtube.com</a> and presents
+    <p>Fortunately, there's a way to make a script that scrapes data off of <a href="https://www.youtube.com/">youtube.com</a> and presents
       it in a nice simple webpage that doesn't require JavaScript. People have done this already! There's a project
       called <a href="https://github.com/iv-org/invidious">Invidious</a> that doesn't require JavaScript for you to
-      watch YouTube videos, ex: <a href=https://yewtu.be/watch?v=dQw4w9WgXcQ>https://yewtu.be/watch?v=dQw4w9WgXcQ</a>
+      watch YouTube videos – e.g. <a href=https://yewtu.be/watch?v=dQw4w9WgXcQ>https://yewtu.be/watch?v=dQw4w9WgXcQ</a>.
     </p>
-    <p>Those (Invidious and others) are called alternative <span class="yellow">Frontends</span>, where you really are
-      still using YouTube but with a different Interface, in our case a privacy friendly one.<br></p>
+    <p>Invidious and others are called alternative <span class="yellow">frontends</span>, where you're
+      still using YouTube (or another website) but with a different interface, in this case a more privacy-friendly one.<br></p>
     <p>
-      Using a frontend and changing links each time from ex:<br>
+      Changing links every time from e.g.<br>
       <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a>
       <span>&#8594;</span>
       <a href="https://yewtu.be/watch?v=dQw4w9WgXcQ">https://yewtu.be/watch?v=dQw4w9WgXcQ</a>
-      <br> is a difficult process and best to be automated, so we did that!<br>
+      <br> is an inconvenient process and best to be automated, so we did that!<br>
     </p>
     <p>LibRedirect's main functionality is to make the use of those frontends easier by automating it. It makes life
       much easier and privacy more convenient.</p>
     <h3 id="suggest_frontend">
-      <a href="#suggest_frontend">Suggest a Frontend</a>
+      <a href="#suggest_frontend">Suggest a frontend</a>
     </h3>
-    <p>Requirements</p>
+    <p><strong>Requirements:</strong></p>
     <ol>
-      <li>Open Source</li>
-      <li>Enhances Privacy over main site</li>
-      <li>Can be self-hosted. So, It's Decentralized</li>
+      <li>Open source</li>
+      <li>Enhances privacy over main site</li>
+      <li>Can be self-hosted, so it's decentralised</li>
     </ol>
-    <p>Good Examples</p>
+    <p><strong>Good examples:</strong></p>
     <ul>
       <li>
         <a href="https://github.com/zedeus/nitter" class="green">Nitter</a>
@@ -78,64 +77,63 @@
         <a href="https://github.com/iv-org/invidious" class="green">Invidious</a>
       </li>
       <li>
-        <a href="https://github.com/spikecodes/libreddit" class="green">Libreddit</a>
+        <a href="https://github.com/redlib-org/redlib" class="green">Redlib</a>
       </li>
       <li>
         <a href="https://simple-web.org/projects/simplytranslate.html" class="green">SimplyTranslate</a>
       </li>
     </ul>
-    <p>Bad Examples</p>
+    <p><strong>Bad examples:</strong></p>
     <ul>
       <li>
         <a href="https://pixiv.moe/" class="red">PixivMoe</a>
-        - Wasn't meant to be an alternative private frontend in the first place
+        – Wasn't meant to be an alternative private frontend in the first place.
       </li>
       <li>
         <a href="https://imginn.com/" class="red">Imginn</a>
-        - Wasn't meant to be an alternative private frontend in the first place.
+        – Wasn't meant to be an alternative private frontend in the first place.
       </li>
       <li>
         <a href="https://www.startpage.com/" class="red">Startpage</a>
-        - There's already an <a
+        – There's already an <a
           href="https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/">extension</a> for it.
       </li>
       <li>
         <a href="https://old.reddit.com/" class="red">Old Reddit</a>
-        - There's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect">extension</a>
+        – There's already an <a href="https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect">extension</a>
         for it.
       </li>
       <li>
         <a href="https://pinafore.social/" class="red">Pinafore</a>
-        - A full featured web app for <a href="https://joinmastodon.org/">Mastodon</a>, not a frontend
+        – A full featured web app for <a href="https://joinmastodon.org/">Mastodon</a>, not a frontend.
       </li>
       <li>
         <a href="https://playsoju.netlify.app/" class="red">Soju</a>
-        - A website that gives you samples of Spotify songs, not a
+        – A website that gives you samples of Spotify songs, not a
         frontend. If you want to use it, just visit their
         website and paste the
-        spotify link you want to get a sample song of.
+        Spotify link for the song you want to get a sample of.
       </li>
       <li>
-        PornInvidious: <a href="https://codeberg.org/LibRedirect/libredirect/issues/11#issuecomment-630922">See
-          Discussion</a>
+        PornInvidious – <a href="https://codeberg.org/LibRedirect/libredirect/issues/11#issuecomment-630922">See
+          discussion</a>.
       </li>
     </ul>
-    <h3 id="why_forking_privacy_redirect">
-      <a href="#why_forking_privacy_redirect">Why forking Privacy Redirect?</a>
+    <h3 id="why_fork_privacy_redirect">
+      <a href="#why_fork_privacy_redirect">Why fork Privacy Redirect?</a>
     </h3>
     <p>
       <a href="https://github.com/SimonBrazell/privacy-redirect">Privacy Redirect</a>
-      hasn't been maintained since 6/12/2021. Many instances are hard coded.
-      Some should be removed as they became offline and many others should be
-      added. Many Pull Requests were left pending and waiting. So we stepped
+      hasn't been maintained since 6 December 2021. Many instances are hard-coded.
+      Some should be removed as they've since gone offline and many others should be
+      added. Many pull requests were left pending and waiting, so we stepped
       in. Later, we started improving it further by adding new features and
       frontends.
     </p>
 
     <p>
-      Disclaimer: Even though we forked from Privacy Redirect, LibRedirect is
+      Even though we forked from Privacy Redirect, LibRedirect is now independent, as it is
       ahead of the main project with several improvements and new features.
-      LibRedirect is independent now.
     </p>
     <h3 id="why_all_those_permissions">
       <a href="#why_all_those_permissions">Why all those permissions?</a>
@@ -145,8 +143,8 @@
       <li>
         <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest">webRequest</a>,
         <a>webRequestBlocking</a>: To block <code>http</code> requests or
-        redirect them. For example, to redirect to Invidious before it can
-        reach YouTube's servers.
+        redirect them (e.g. to redirect to Invidious before it can
+        reach YouTube's servers).
       </li>
       <li>
         <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage</a>: To
@@ -155,7 +153,7 @@
       <li>
         <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText">Clipboard.writeText</a>:
         To write the original link to the clipboard while using Copy Raw.
-        This permission is used to only write data. LibRedirect does NOT read
+        This permission is only used to write data. LibRedirect does <em>not</em> read
         the data in your clipboard.
       </li>
       <li>
@@ -175,46 +173,44 @@
       </li>
       <li>
         <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns">all_urls</a>:
-        The targets e.g <a href="https://youtube.com">youtube.com</a>,
+        The targets, e.g. <a href="https://youtube.com">youtube.com</a>,
         <a href="https://twitter.com">twitter.com</a> can be static,
         but the Switch Instance and Copy Raw buttons require access
-        to the instances' urls which are custom to each user, and by so can't be static.
+        to the instances' URLs which are custom to each user, and thus can't be static.
       </li>
     </ul>
     <h3 id="where_the_hell_are_those_instances_coming_from">
-      <a href="#where_the_hell_are_those_instances_coming_from">Where the hell are those instances coming from ?</a>
+      <a href="#where_the_hell_are_those_instances_coming_from">Where the hell are those instances coming from?</a>
     </h3>
     <p>
-      Almost every frontend project has a list of public instances. Examples:
-      <a href="https://api.invidious.io/">Invidious' official instances list</a>,
+      Almost every frontend project has a list of public instances, e.g.
+      <a href="https://api.invidious.io/">Invidious' official instances list</a> and
       <a href="https://github.com/zedeus/nitter/wiki/Instances">Nitter's official instances list</a>. We fetch
       those lists using an automated
-      <a href="https://github.com/libredirect/instances">python script</a>.
-      This script gets triggered every single day. We don't intercept nor
-      modify the lists outside of removing urls that are not valid (the
-      structure is not that of a url). They are
-      not our responsibility, they are the projects maintainers'.
-    <p>Hence, If you are not comfortable with certain instances policies or found malicious instances then report it to
-      the
-      project maintainers to remove it from theirs. Then we will update the instances manually again to make sure those
-      are removed which is only when you intimate us via our Matrix room or by Mastodon if the case is of high severity
-      which will affect our users, if not please wait until the script fetches the instance automatically and remove
-      them.</p>
+      <a href="https://github.com/libredirect/instances">Python script</a>,
+      which gets triggered daily. We neither intercept nor
+      modify the lists outside of removing invalid URLs (i.e. the structure is not that of a URL). 
+      They are not our responsibility, they are the projects maintainers'.
+    <p>Hence, if you are not comfortable with certain instances' policies or have found malicious instances, please report them to
+      the project maintainers to remove them from their lists. We will then update our lists manually to make sure those
+      instances are removed, only after you contact us via our <a href="https://matrix.to/#/#libredirect:matrix.org">Matrix room</a> 
+      or by <a href="https://fosstodon.org/@libredirect">Mastodon</a> and if the case is of high severity which will affect our users; 
+      if not, please wait until the script fetches the instances automatically and removes them.</p>
     </p>
     <h3 id="chrome_web_store">
-      <a href="#chrome_web_store">Chrome Web Store ?</a>
+      <a href="#chrome_web_store">Chrome Web Store?</a>
     </h3>
     <p>
-      We can't publish it to the Chrome Web Store as it requires Manifest v3
-      which removed essential features LibRedirect needs.
-      You can still <a href="https://libredirect.github.io/download_chromium.html">install it manually</a> though.
+      We can't publish LibRedirect to the Chrome Web Store as it requires Manifest v3,
+      which removed essential features that LibRedirect needs.
+      However, you can still <a href="./download_chromium.html">install it manually</a>.
     </p>
     <p>
-      We are planning to adopt Manifest v3 in Firefox though as they will support
+      We are planning to adopt Manifest v3 in Firefox though, as they will support
       the features LibRedirect needs. If other browsers adopt Mozilla's
-      Manifest, then you might see LibRedirect in the Chrome Web Store.
+      Manifest, then you might see LibRedirect in the Chrome Web Store someday.
     </p>
-    <h3 id="mobile_support"> <a href="#mobile_support">Mobile Support ?</a></h3>
+    <h3 id="mobile_support"> <a href="#mobile_support">Mobile support?</a></h3>
     <p>Rather than using LibRedirect, use these apps:</p>
     <ul class="clear">
       <li>
@@ -237,11 +233,10 @@
         <a href="https://github.com/you-apps/TranslateYou">TranslateYou</a>,
         <a href="https://manerakai.github.io/simplytranslate_mobile/">SimplyTranslate Mobile</a>
       </li>
-      <hr>
-      <p>As of now, you can now install the extension in Firefox for Android like in Desktop. Just visit the <a
-          href="https://addons.mozilla.org/firefox/addon/libredirect/">Mozilla addons page</a> and switch to Desktop
-        view to install the extension. </p>
-      <p>Even though, note that it is within Firefox browser only not for Android as a Whole.</p>
+      <p>You can also install LibRedirect in Firefox for Android; just visit the <a
+          href="https://addons.mozilla.org/firefox/addon/libredirect/">Mozilla addons page</a> and 
+      switch to desktop view to install the extension. Please note that this is only for the Firefox 
+      browser, not Android as a whole.</p>
     </ul>
   </div>
   <br>
