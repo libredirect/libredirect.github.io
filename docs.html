@@ -15,7 +15,8 @@
     content="A web extension that redirects YouTube, Twitter, Instagram, etc. requests to alternative privacy-friendly frontends">
   <title>Docs</title>
   <meta name="referrer" content="same-origin">
-  <meta http-equiv="Content-Security-Policy" content=" default-src 'none' base-uri 'self' script-src 'none' form-action 'none' frame-ancestors 'none' ">
+  <meta http-equiv="Content-Security-Policy"
+    content=" default-src 'none' base-uri 'self' script-src 'none' form-action 'none' frame-ancestors 'none' ">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
         <code>Shift+Alt+L</code> – To switch to a different instance from the one you're currently in.
       </li>
       <li>
-        <code>Shift+Alt+C</code> – Copies the original link – e.g. copies the original Twitter link 
+        <code>Shift+Alt+C</code> – Copies the original link – e.g. copies the original Twitter link
         when you're using <a href="https://github.com/zedeus/nitter">Nitter</a>.
       </li>
       <li>
@@ -54,16 +55,19 @@
 
     <h3 id="preferred"><a href="#preferred">Preferred instances</a></h3>
     <p>To go from the current instance you're using to your preferred or favourite instance, it is explained as follows.
-      For example, assume someone shares with you a <a href="https://github.com/TeamPiped/Piped">Piped</a> link for the instance 
-      <a href="https://piped.mha.fi">piped.mha.fi</a>, but you want to use your favourite instance, 
-      <a href="https://piped.video">piped.video</a>, the official instance. It would be a hassle to change the domain manually,
+      For example, assume someone shares with you a <a href="https://github.com/TeamPiped/Piped">Piped</a> link for the
+      instance
+      <a href="https://piped.mha.fi">piped.mha.fi</a>, but you want to use your favourite instance,
+      <a href="https://piped.video">piped.video</a>, the official instance. It would be a hassle to change the domain
+      manually,
       especially if you've been sent multiple links.
     </p>
     <p>To avoid that hassle, you can redirect to your favourite instance with just two clicks! Just open the
       popup menu and click the reload button near the frontend (in this case, YouTube). Voila! You have reached your
       destination.</p>
 
-    <p>Below is a small demo of this feature. Please note that switching to your favourite instance by clicking the reload button
+    <p>Below is a small demo of this feature. Please note that switching to your favourite instance by clicking the
+      reload button
       works regardless of whether redirection for that frontend is turned off or on.</p>
     <video src="./vids/preferred_instances.webm" type="video/webm" controls></video>
 
@@ -85,8 +89,8 @@
     </p>
 
     <h3 id="search_engine_chromium"><a href="#search_engine_chromium">Setting LibRedirect as a search engine in
-      Chromium</a></h3>
-    <p>Type in your address bar: <span class="yellow">chrome://settings/searchEngines</span>. Under 
+        Chromium</a></h3>
+    <p>Type in your address bar: <span class="yellow">chrome://settings/searchEngines</span>. Under
       <span class="yellow">Site search</span>,
       click <span class="yellow">Add</span> and type:
       <br>
@@ -95,6 +99,14 @@
       <strong>URL with %s in place of query:</strong> http://search.libredirect.invalid/?q=%s
     </p>
     <video src="./vids/chrome_default_seach_engine.webm" type="video/webm" controls></video>
+
+    <h3 id="search_engine_firefox_android"><a href="#search_engine_firefox_android">Setting LibRedirect as a search
+        engine in
+        Firefox Android</a></h3>
+    <p>Go to Settings => Search => Default search engine => Add search engine:<br>
+      <strong>Search engine name:</strong> LibRedirect<br>
+      <strong>Search string URL:</strong> http://libredirect.github.io/?q=%s
+    </p>
     <br><br><br>
   </div>
 </body>
