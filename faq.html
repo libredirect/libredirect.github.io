@@ -197,6 +197,15 @@
       or by <a href="https://fosstodon.org/@libredirect">Mastodon</a> and if the case is of high severity which will affect our users; 
       if not, please wait until the script fetches the instances automatically and removes them.</p>
     </p>
+    <h3 id="embeds">
+      <a href="#embeds">Embeds aren't working, why?</a>
+    </h3>
+    <p>
+      <li>The Webpage you are trying to use may have implemented CSP (<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy</a>) which prevents Libredirect from replacing them with the frontends.</li>
+      <li>It could be broken because of Top layer in HTML element of the embed that maybe a Custom Video Player or Ads.</li>
+      <li>Some instances doesn't support embeds at all or displaced them explicitly</li>
+      <p>They are disabled by default to not help website in creating a fingerprint on you as websites can detect when you redirect an embed inside it.</p>
+    </p>
     <h3 id="chrome_web_store">
       <a href="#chrome_web_store">Chrome Web Store?</a>
     </h3>
@@ -210,34 +219,6 @@
       the features LibRedirect needs. If other browsers adopt Mozilla's
       Manifest, then you might see LibRedirect in the Chrome Web Store someday.
     </p>
-    <h3 id="mobile_support"> <a href="#mobile_support">Mobile support?</a></h3>
-    <p>Rather than using LibRedirect, use these apps:</p>
-    <ul class="clear">
-      <li>
-        URL Manipulation <span>&#8594;</span>
-        <a href="https://github.com/TrianguloY/UrlChecker">URLCheck</a>,
-        <a href="https://github.com/1fexd/LinkSheet">LinkSheet</a>
-      </li>
-      <li>
-        YouTube <span>&#8594;</span>
-        <a href="https://libretube.dev/">LibreTube</a>,
-        <a href="https://github.com/lamarios/clipious">Clipious</a>,
-        <a href="https://newpipe.net/">NewPipe</a>
-      </li>
-      <li>
-        Twitter <span>&#8594;</span>
-        <a href="https://fritter.cc/">Fritter</a>
-      </li>
-      <li>
-        Translate <span>&#8594;</span>
-        <a href="https://github.com/you-apps/TranslateYou">TranslateYou</a>,
-        <a href="https://manerakai.github.io/simplytranslate_mobile/">SimplyTranslate Mobile</a>
-      </li>
-      <p>You can also install LibRedirect in Firefox for Android; just visit the <a
-          href="https://addons.mozilla.org/firefox/addon/libredirect/">Mozilla addons page</a> and 
-      switch to desktop view to install the extension. Please note that this is only for the Firefox 
-      browser, not Android as a whole.</p>
-    </ul>
   </div>
   <br>
   <br>
