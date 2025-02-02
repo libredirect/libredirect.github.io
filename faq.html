@@ -249,8 +249,8 @@
         <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/declarativeNetRequest">
           declarativeNetRequest
         </a>
-        (Manifest V3): Sets a Rules Table. This table gets updated when you change the settings page for example. This
-        The table gets submitted to the browser. Then, the browser will listen to ongoing HTTP requests, and decide
+        (Manifest V3): Sets a Rules Table. This table gets updated when you change the settings page for example. The
+        table gets submitted to the browser. Then, the browser will listen to ongoing HTTP requests, and decide
         what to do according to the table.
       </li>
     </ol>
@@ -269,14 +269,14 @@
     </p>
 
     <p>
-      Examples of things to listen to in the background
-    <ol>
+      Examples of listening to ongoing HTTP requests in the background
+    <ul>
       <li>The user types <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">https://youtube.com/watch?v=dQw4w9WgXcQ</a>
         in the
         address bar</li>
       <li>A page in <a href="https://example.com">example.com</a> has an image that is fetched from <a
           href="https://imgur.com">imgur.com</a> </li>
-    </ol>
+    </ul>
     </p>
     <p>
       In the popup, we have some buttons to help with:
@@ -285,19 +285,25 @@
       <li>Redirect to Original</li>
       <li>Switch Instance to an arbitraty frontend</li>
     </ul>
-    All these buttons do NOT need webRequest nor declarativeNetRequest, as the popup is not a background script. The
-    user opened it manually, and pressed the buttons manually.
+    </p>
+    <p>
+      All these buttons do NOT need webRequest nor declarativeNetRequest, as the popup is not a background script. The
+      user opened it manually, and pressed the buttons manually.
     </p>
 
     <p>
       There are two places where webRequest works and declarativeNetRequest doesn't.
-      <ol>
+    <ol>
       <li>
         Selecting a random instance from a set of favorite instances for each new HTTP request:
-        <p>In declarativeNetRequest, the user can only redirect to a single instance that is hard-coded in the Rules
+        <p>
+          In declarativeNetRequest, the user can only redirect to a single instance that is hard-coded in the Rules
           Table.
           In order to change this instance, you should go to the settings page and change it manually. You can't change
-          it in the "background"</p>
+          it in the "background". This may be solved by duplicating the same rule with a different instance, see <a
+            href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/declarativeNetRequest#matching_precedence">Matching
+            precedence</a>.
+        </p>
       </li>
       <li>Sending a separate HTTP request to get some information before redirecting to the new URL:
         <p>
@@ -306,14 +312,12 @@
           separate HTTP request to <a href="https://nominatim.openstreetmap.org">nominatim.openstreetmap.org</a> to get
           the lat,
           lon for that address. In
-          declarativeNetRequest, there's no "code" that can be executed to make an HTTP request. It's just a "Rule" in a
+          declarativeNetRequest, there's no "code" that can be executed to make a separate HTTP request. It's just a "Rule" in a
           table.
         </p>
       </li>
     </ol>
     </p>
-
-
   </div>
   <br>
   <br>
